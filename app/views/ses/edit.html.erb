@@ -1,0 +1,176 @@
+<h1>Editing se</h1>
+
+<% form_for(@se) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :se_uid %><br />
+    <%= f.text_field :se_uid %>
+  </p>
+  <p>
+    <%= f.label :se_uuid %><br />
+    <%= f.text_field :se_uuid %>
+  </p>
+  <p>
+    <%= f.label :se_active %><br />
+    <%= f.check_box :se_active %>
+  </p>
+  <p>
+    <%= f.label :se_status %><br />
+    <%= f.text_field :se_status %>
+  </p>
+  <p>
+    <%= f.label :se_replaced_by %><br />
+    <%= f.text_field :se_replaced_by %>
+  </p>
+  <p>
+    <%= f.label :se_close_match %><br />
+    <%= f.text_field :se_close_match %>
+  </p>
+  <p>
+    <%= f.label :se_type_objective %><br />
+    <%= f.text_field :se_type_objective %>
+  </p>
+  <p>
+    <%= f.label :se_type_phylogenetic %><br />
+    <%= f.text_field :se_type_phylogenetic %>
+  </p>
+  <p>
+    <%= f.label :se_type_biological %><br />
+    <%= f.text_field :se_type_biological %>
+  </p>
+  <p>
+    <%= f.label :se_phylum %><br />
+    <%= f.text_field :se_phylum %>
+  </p>
+  <p>
+    <%= f.label :se_class %><br />
+    <%= f.text_field :se_class %>
+  </p>
+  <p>
+    <%= f.label :se_order %><br />
+    <%= f.text_field :se_order %>
+  </p>
+  <p>
+    <%= f.label :se_family %><br />
+    <%= f.text_field :se_family %>
+  </p>
+  <p>
+    <%= f.label :se_genus %><br />
+    <%= f.text_field :se_genus %>
+  </p>
+  <p>
+    <%= f.label :se_epithet %><br />
+    <%= f.text_field :se_epithet %>
+  </p>
+  <p>
+    <%= f.label :se_author_year %><br />
+    <%= f.text_field :se_author_year %>
+  </p>
+  <p>
+    <%= f.label :se_synonym_one %><br />
+    <%= f.text_field :se_synonym_one %>
+  </p>
+  <p>
+    <%= f.label :se_synonym_two %><br />
+    <%= f.text_field :se_synonym_two %>
+  </p>
+  <p>
+    <%= f.label :se_synonym_three %><br />
+    <%= f.text_field :se_synonym_three %>
+  </p>
+  <p>
+    <%= f.label :se_synonym_four %><br />
+    <%= f.text_field :se_synonym_four %>
+  </p>
+  <p>
+    <%= f.label :se_synonym_five %><br />
+    <%= f.text_field :se_synonym_five %>
+  </p>
+  <p>
+    <%= f.label :se_basionym %><br />
+    <%= f.text_field :se_basionym %>
+  </p>
+  <p>
+    <%= f.label :se_ontology %><br />
+    <%= f.text_field :se_ontology %>
+  </p>
+  <p>
+    <%= f.label :se_division_id %><br />
+    <%= f.text_field :se_division_id %>
+  </p>
+  <p>
+    <%= f.label :se_ncbi %><br />
+    <%= f.text_field :se_ncbi %>
+  </p>
+  <p>
+    <%= f.label :se_ubio %><br />
+    <%= f.text_field :se_ubio %>
+  </p>
+  <p>
+    <%= f.label :se_itis %><br />
+    <%= f.text_field :se_itis %>
+  </p>
+  <p>
+    <%= f.label :se_gbif %><br />
+    <%= f.text_field :se_gbif %>
+  </p>
+  <p>
+    <%= f.label :se_eol %><br />
+    <%= f.text_field :se_eol %>
+  </p>
+  <p>
+    <%= f.label :se_bold %><br />
+    <%= f.text_field :se_bold %>
+  </p>
+  <p>
+    <%= f.label :se_col_id %><br />
+    <%= f.text_field :se_col_id %>
+  </p>
+  <p>
+    <%= f.label :se_col %><br />
+    <%= f.text_field :se_col %>
+  </p>
+  <p>
+    <%= f.label :se_geospecies %><br />
+    <%= f.text_field :se_geospecies %>
+  </p>
+  <p>
+    <%= f.label :se_dbpedia %><br />
+    <%= f.text_field :se_dbpedia %>
+  </p>
+  <p>
+    <%= f.label :se_freebase %><br />
+    <%= f.text_field :se_freebase %>
+  </p>
+  <p>
+    <%= f.label :se_opencyc %><br />
+    <%= f.text_field :se_opencyc %>
+  </p>
+  <p>
+    <%= f.label :se_umbel %><br />
+    <%= f.text_field :se_umbel %>
+  </p>
+  <p>
+    <%= f.label :se_lc %><br />
+    <%= f.text_field :se_lc %>
+  </p>
+  <p>
+    <%= f.label :se_bbc %><br />
+    <%= f.text_field :se_bbc %>
+  </p>
+  <p>
+    <%= f.label :se_wikipedia %><br />
+    <%= f.text_field :se_wikipedia %>
+  </p>
+  <p>
+    <%= f.label :se_wikispecies %><br />
+    <%= f.text_field :se_wikispecies %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @se %> |
+<%= link_to 'Back', ses_path %>
