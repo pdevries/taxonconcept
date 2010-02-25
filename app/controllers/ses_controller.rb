@@ -24,8 +24,19 @@ class SesController < ApplicationController
       se_epithet = @se.se_epithet
       se_uid     = @se.se_uid
       se_uuid    = @se.se_uuid
+      @se_name   = scientificname(@se.se_genus,@se.se_epithet,@se.se_author_year)
+# create GNI UUIDs for synonyms
+  @se_name_uuid              =  UUID.create_v5((@se.se_genus + " " + @se.se_epithet + " " + @se.se_author_year),GNA_NAMESPACE).guid
+#  @se_synonym_one_uuid       =  UUID.create_v5(@se.se_synonym_one,GNA_NAMESPACE).guid
+#  @se_synonym_two_uuid       =  UUID.create_v5(@se.se_synonym_two,GNA_NAMESPACE).guid
+#  @se_synonym_three_uuid     =  UUID.create_v5(@se.se_synonym_three,GNA_NAMESPACE).guid
+#  @se_synonym_four_uuid      =  UUID.create_v5(@se.se_synonym_four,GNA_NAMESPACE).guid
+#  @se_synonym_five_uuid      =  UUID.create_v5(@se.se_synonym_five,GNA_NAMESPACE).guid
+#  @se_basionym_uuid          =  UUID.create_v5(@se.se_basionym,GNA_NAMESPACE).guid
+#
       @se_concept_name       =  concept_name(@se.se_genus,@se.se_epithet,@se.se_uid)
       @se_concept_id         =  concept_id(@se.se_uuid)
+      @se_concept_name       =  concept_name(@se.se_genus,@se.se_epithet,@se.se_uid)
       @se_ncbi_url           =  ncbi_url(@se.se_ncbi)
       @se_bio2rdf            =  bio2rdf_url(@se.se_ncbi)
       @se_uniprot            =  uniprot_url(@se.se_ncbi)

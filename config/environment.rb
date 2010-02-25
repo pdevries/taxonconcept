@@ -60,7 +60,6 @@ GS_ONTOLOGY_OLD                                      = "http://rdf.geospecies.or
 GS_ONTOLOGY                                          = "http://rdf.geospecies.org/ont/geospecies#"
 GS_ONTOLOGY_URL                                      = "http://rdf.geospecies.org/ont/geospecies.owl"
 PHYLO_ONTOLOGY                                       = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#"
-PHYLO_ONTOLOGY                                       = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#"
 PHYLO_ONTOLOGY_PREFIX                                = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#Kingdom_"
 PHYLO_ONTOLOGY_ANIMALIA_PREFIX                       = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#Kingdom_Animalia"
 PHYLO_ONTOLOGY_PLANTAE_PREFIX                        = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#Kingdom_Plantae"
@@ -98,6 +97,7 @@ UNIPROT_CORE                                         = "http://purl.uniprot.org/
 WGS84_URI                                            = "http://rdf.geospecies.org/ont/geospecies#GeodeticDatum_WGS84"
 
 # Constants for External Links
+GNA_RDF_PREFIX                                       = 'http://www.globalnames.org/name_strings/'
 BBC_PREFIX                                           = 'http://www.bbc.co.uk/nature/species/'
 BHL_PREFIX                                           = 'http://www.biodiversitylibrary.org/name/'
 BIO2RDF_TAXON_URL_PREFIX                             = 'http://bio2rdf.org/taxon:'
@@ -119,6 +119,7 @@ PUBMED_PREFIX                                        = 'http://www.ncbi.nlm.nih.
 UBIO_PREFIX                                          = 'urn:lsid:ubio.org:namebank:'
 UBIO_URL_PREFIX                                      = 'http://www.ubio.org/browser/details.php?namebankID='
 UNIPROT_TAXON_URL_PREFIX                             = 'http://www.uniprot.org/taxonomy/'
+COL_ID_PREFIX                                        = 'http://www.catalogueoflife.org/'
 #UNIPROT_TAXON_URL_PREFIX                            = 'http://purl.uniprot.org/taxonomy/' #note change
 
 USDA_PLANTS_PREFIX                                   = 'http://plants.usda.gov/java/profile?symbol='
@@ -231,4 +232,14 @@ GEONAMES_MEXICO_URI      =  "http://sws.geonames.org/3996063/"
 GEONAMES_NORTH_AMERICA_URI  =  "http://sws.geonames.org/6255149/"
 GEONAMES_UK_URI             =  "http://sws.geonames.org/2635167/"
 
-
+unless defined? ENV_CONSTANTS_ARE_DEFINED
+  ENV_CONSTANTS_ARE_DEFINED = true
+  APP_VERSION = "N/A" #version info is changed to deployment tag by capistrano script
+  PER_PAGE_MAX = 1000
+  PROGRAM_NAME = "Taxon Concept Index"
+  GOOGLE_ANALYTICS = '' 
+  NOREPLY_EMAIL = "noreply@example.org"
+  FEEDBACK_EMAIL = 'customer_service@example.com'
+  LSID_PREFIX = "urn:lsid:taxonconcept.org:index:"
+  GNA_NAMESPACE = UUID.create_v5("globalnames.org", UUID::NameSpace_DNS)
+end

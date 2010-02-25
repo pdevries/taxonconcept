@@ -68,13 +68,17 @@ end
   xml.txn(:speciesHasOccurrenceTag, "rdf:resource" => @se_uri + "#Occurrence")
   xml.txn(:speciesHasIndividualTag, "rdf:resource" => @se_uri + "#Individual")
   xml.comment!("A species concept is some combination of objective, phylogenetic, biological")
-  if !@se.se_type_objective?
+  xml.comment!("GNA UUID Synonyms")
+  if !@se_name_uuid.nil?
+    xml.txn(:hasGNASynonym, "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid)
+  end
+  if @se.se_type_objective?
     xml.rdf(:type, "rdf:resource" => "http://rdf.taxonconcept.org/ont/txn.owl#SpeciesConcept_Objective")
   end
-  if !@se.se_type_phylogenetic?
+  if @se.se_type_phylogenetic?
     xml.rdf(:type, "rdf:resource" => "http://rdf.taxonconcept.org/ont/txn.owl#SpeciesConcept_Phylogenetic")
   end
-  if !@se.se_type_biological?
+  if @se.se_type_biological?
     xml.rdf(:type, "rdf:resource" => "http://rdf.taxonconcept.org/ont/txn.owl#SpeciesConcept_Biological")
   end
   xml.comment!("This Class is the primary topic of the related HTML and RDF descriptions")
@@ -181,6 +185,14 @@ xml.comment!("Linked Data Linkouts")
   if !@se_geospecies_url.nil?
     xml.txn(:GeoSpeciesConcept, "rdf:about"  =>  @se_geospecies_url ) do
       xml.skos(:closeMatch,    "rdf:resource"    => @se_uri)
+    end  
+  end  
+
+  if ! @se_name_uuid.nil?
+    xml.txn(:GNASynonym, "rdf:about"  =>  GNA_RDF_PREFIX + @se_name_uuid ) do
+    xml.skos(:prefLabel, @se_name)
+    xml.rdfs(:seeAlso,  "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid)
+    xml.txn(:hasSpeciesTaxonConcept,    "rdf:resource"    => @se_uri)
     end  
   end  
 

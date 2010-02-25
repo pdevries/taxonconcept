@@ -7,6 +7,13 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+#TODO This needs logic to deal with missing epithet etc.
+  def scientificname(genus,epithet,author_year)
+     scientificname = (genus + " " + epithet)
+  end
+
+
   def concept_name(se_genus,se_epithet,se_uid)
      concept_name = (se_genus + " " + se_epithet + " se:" + se_uid)
   end
@@ -167,7 +174,7 @@ class ApplicationController < ActionController::Base
         if wikispecies.nil?
           wikispecies_url = nil
         else
-        wikispecies_url = "http://species.wikimedia.org/wiki/" + umbel
+        wikispecies_url = "http://species.wikimedia.org/wiki/" + wikispecies
     end
    end
 
