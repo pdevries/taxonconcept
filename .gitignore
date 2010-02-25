@@ -5,7 +5,8 @@
 *.sql
 *.xml
 *.pyc
-.DS_Store
+*.DS_Store
+\._*
 .cache
 .project
 .loadpath

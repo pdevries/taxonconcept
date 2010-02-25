@@ -49,6 +49,8 @@ CREATOR2                                             = "Dimtry Mozzherin"
 CREATOR2_URI                                         = "http://rdf.geospecies.org/ont/people.owl#Dimtry_Mozzherin"
 LICENSE_URI                                          = "http://creativecommons.org/publicdomain/"
 ATTRIBUTION_URL                                      = "http://lod.taxonconcept.org"
+SPECIES_ID_PREFIX                                    = "urn:lsid:globalnames.org:taxon:"
+
 
 # Constants for ONTOLOGY's
 ONTOLOGY                                             = "http://rdf.taxonconcept.org/ont/txn.owl#"

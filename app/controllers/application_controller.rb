@@ -11,6 +11,11 @@ class ApplicationController < ActionController::Base
      concept_name = (se_genus + " " + se_epithet + " se:" + se_uid)
   end
 
+  def concept_id(se_uuid)
+     concept_id = (SPECIES_ID_PREFIX + se_uuid)
+  end
+
+
   def ncbi_url(ncbi)
         if ncbi.nil?
            ncbi_url = nil

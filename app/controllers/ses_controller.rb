@@ -25,6 +25,7 @@ class SesController < ApplicationController
       se_uid     = @se.se_uid
       se_uuid    = @se.se_uuid
       @se_concept_name       =  concept_name(@se.se_genus,@se.se_epithet,@se.se_uid)
+      @se_concept_id         =  concept_id(@se.se_uuid)
       @se_ncbi_url           =  ncbi_url(@se.se_ncbi)
       @se_bio2rdf            =  bio2rdf_url(@se.se_ncbi)
       @se_uniprot            =  uniprot_url(@se.se_ncbi)
