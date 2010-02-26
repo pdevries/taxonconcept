@@ -41,26 +41,28 @@ Rails::Initializer.run do |config|
 end
 # Constants for RDF Header INFO
 PUBLISHER                                            = "TaxonConcept Knowledge Base"
-PUBLISHER_URI                                        = "http://rdf.taxonconcept.org/ont/taxonconcept#TaxonConcept_Knowledge_Base_Project"
-DATASET_URI                                          = "http://rdf.taxonconcept.org/ont/void#this"
+PUBLISHER_URI                                        = "http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept_Knowledge_Base_Project"
+DATASET_URI                                          = "http://lod.taxonconcept.org/ontology/void#this"
 CREATOR1                                             = "Peter J. DeVries"
-CREATOR1_URI                                         = "http://rdf.geospecies.org/ont/people.owl#Peter_J_DeVries"
+CREATOR1_URI                                         = "http://lod.taxonconcept.org/ontology/people.owl#Peter_J_DeVries"
 CREATOR2                                             = "Dimtry Mozzherin"
-CREATOR2_URI                                         = "http://rdf.geospecies.org/ont/people.owl#Dimtry_Mozzherin"
+CREATOR2_URI                                         = "http://lod.taxonconcept.org/ontology/people.owl#Dimtry_Mozzherin"
 LICENSE_URI                                          = "http://creativecommons.org/publicdomain/"
 ATTRIBUTION_URL                                      = "http://lod.taxonconcept.org"
 SPECIES_ID_PREFIX                                    = "urn:lsid:globalnames.org:taxon:"
 
 
 # Constants for ONTOLOGY's
-ONTOLOGY                                             = "http://rdf.taxonconcept.org/ont/txn.owl#"
+ONTOLOGY                                             = "http://lod.taxonconcept.org/ontology/txn.owl#"
+GNI_ONTOLOGY                                         = "http://www.globalnames.org/ontology/gni.owl#"
+BBC_SPECIES_PREFIX                                   = "http://www.bbc.co.uk/nature/species/"
+SPECIES_DOCUMENTATION_PREFIX                         = "http://lod.taxonconcept.org/se_owl/"
 SEO_ONTOLOGY                                         = "http://www.taxonconcept.org/ont/se_v01/seo.owl#"
 SEO_ONTOLOGY_URL                                     = "http://www.taxonconcept.org/ont/se_v01/seo.owl"
-GS_ONTOLOGY_OLD                                      = "http://rdf.geospecies.org/ont/gsontology#"
 GS_ONTOLOGY                                          = "http://rdf.geospecies.org/ont/geospecies#"
 GS_ONTOLOGY_URL                                      = "http://rdf.geospecies.org/ont/geospecies.owl"
 PHYLO_ONTOLOGY                                       = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#"
-PHYLO_ONTOLOGY_PREFIX                                = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#Kingdom_"
+PHYLO_ONTOLOGY_FUNGI_PREFIX                          = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#Kingdom_Fungi"
 PHYLO_ONTOLOGY_ANIMALIA_PREFIX                       = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#Kingdom_Animalia"
 PHYLO_ONTOLOGY_PLANTAE_PREFIX                        = "http://www.taxonconcept.org/ont/phylo_v01/phylo.owl#Kingdom_Plantae"
 RDF_ONTOLOGY                                         = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -97,7 +99,7 @@ UNIPROT_CORE                                         = "http://purl.uniprot.org/
 WGS84_URI                                            = "http://rdf.geospecies.org/ont/geospecies#GeodeticDatum_WGS84"
 
 # Constants for External Links
-GNA_RDF_PREFIX                                       = 'http://www.globalnames.org/name_strings/'
+GNA_RDF_PREFIX                                       = 'http://globalnames.org/name_strings/'
 BBC_PREFIX                                           = 'http://www.bbc.co.uk/nature/species/'
 BHL_PREFIX                                           = 'http://www.biodiversitylibrary.org/name/'
 BIO2RDF_TAXON_URL_PREFIX                             = 'http://bio2rdf.org/taxon:'
@@ -144,7 +146,7 @@ DCTERMS_INTERACTIVE_RESOURCE                         = "http://purl.org/dc/dcmit
 # Timezone
 TIMEZONE                                             = "Central Time (US & Canada)"
 START_TIME                                           = Time.now.strftime('%Y-%m-%dT%H:%M:%S%z')
-CREATED_TIME                                         = "2007-01-01T12:00:00-0500"
+CREATED_TIME                                         = "2010-02-24T12:00:00-0500"
 
 # Constants for SKOS Schemes
 TAXON_CONCEPT_SCHEME                                 =  ONTOLOGY + "TaxonConcept_Scheme"
@@ -157,8 +159,6 @@ UBIO_SCHEME                                          =  ONTOLOGY + "UBIO_Scheme"
 GNI_SCHEME                                           =  ONTOLOGY + "GNI_Scheme"
 GBIF_SCHEME                                          =  ONTOLOGY + "GBIF_Scheme"
 BHL_SCHEME                                           =  ONTOLOGY + "BHL_Scheme"
-
-STATE                                                = "Wisconsin" 
 
 
 # STATE GEONAME URI's
@@ -226,9 +226,10 @@ GEONAMES_WI_URI    =        "http://sws.geonames.org/5279468/"
 GEONAMES_WV_URI    =        "http://sws.geonames.org/4826850/"
 GEONAMES_WY_URI    =        "http://sws.geonames.org/5843591/"
 #
-GEONAMES_US_URI    =        "http://sws.geonames.org/6252001/"
-GEONAMES_CANADA_URI      =  "http://sws.geonames.org/6251999/"
-GEONAMES_MEXICO_URI      =  "http://sws.geonames.org/3996063/"
+# Country GEONAME URI's
+GEONAMES_US_URI             =  "http://sws.geonames.org/6252001/"
+GEONAMES_CANADA_URI         =  "http://sws.geonames.org/6251999/"
+GEONAMES_MEXICO_URI         =  "http://sws.geonames.org/3996063/"
 GEONAMES_NORTH_AMERICA_URI  =  "http://sws.geonames.org/6255149/"
 GEONAMES_UK_URI             =  "http://sws.geonames.org/2635167/"
 

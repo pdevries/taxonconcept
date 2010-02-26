@@ -1,8 +1,8 @@
 xml = Builder::XmlMarkup.new(:indent => 2)
 xml.instruct!
 xml.rdf(:RDF,
-  "xmlns:geospecies"              =>  GS_ONTOLOGY,
   "xmlns:txn"                     =>  ONTOLOGY,
+  "xmlns:gni"                     =>  GNI_ONTOLOGY,
   "xmlns:rdfs"                    =>  RDFS_ONTOLOGY,
   "xmlns:rdf"                     =>  RDF_ONTOLOGY,
   "xmlns:owl"                     =>  OWL_ONTOLOGY,
@@ -40,14 +40,15 @@ xml.rdf(:Description, "rdf:about" => @se_rdf) do
 end
 
  xml.owl(:Class, "rdf:about"    => @se_uri) do
-  xml.rdfs(:subClassOf,  "rdf:resource" => "http://rdf.taxonconcept.org/ont/txn.owl#SpeciesConcept")
+  xml.rdfs(:subClassOf,  "rdf:resource" => ONTOLOGY + "SpeciesConcept")
+  xml.rdf(:type, "rdf:resource" => "http://lod.taxonconcept.org/ontology/txn.owl#SpeciesEntityConcept")
   xml.dcterms(:title, @se_concept_name)
   xml.dcterms(:modified, @se.updated_at.strftime('%Y-%m-%dT%H:%M:%S%z'))
   xml.dcterms(:identifier, @se_uri)
   xml.txn(:hasSpeciesConceptID, @se_concept_id)
   xml.dcterms(:isPartOf, "rdf:resource" => DATASET_URI)
   xml.skos(:scopeNote, "An OWL class for the species concept " + @se_concept_name)
-  xml.skos(:inScheme, "rdf:resource" =>  "http://rdf.taxonconcept.org/ont/txn.owl#TaxonConceptScheme")
+  xml.skos(:inScheme, "rdf:resource" =>  "http://lod.taxonconcept.org/ontology/txn.owl#TaxonConceptScheme")
   xml.txn(:kingdom, @se.se_kingdom)
   xml.txn(:phylum, @se.se_phylum)
   xml.txn(:class, @se.se_class)
@@ -59,7 +60,7 @@ end
     xml.txn(:author_year, @se.se_author_year)
   end
   xml.comment!("Link to Species Documentation Ontology")
-  xml.txn(:speciesAsDocumentedBy, "rdf:resource" =>  "http://rdf.taxonconcept.org/ses_owl/" + @se.se_uid)
+  xml.txn(:speciesAsDocumentedBy, "rdf:resource" =>  SPECIES_DOCUMENTATION_PREFIX + @se.se_uid)
   xml.comment!("URI's to Publications")
   xml.txn(:speciesHasTaxonomicDescription, "rdf:resource" => "http://www.example.org/publication1.rdf")
   xml.txn(:speciesHasTaxonomicDescription, "rdf:resource" => "http://www.example.org/publication2.rdf")
@@ -73,13 +74,13 @@ end
     xml.txn(:hasGNASynonym, "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid)
   end
   if @se.se_type_objective?
-    xml.rdf(:type, "rdf:resource" => "http://rdf.taxonconcept.org/ont/txn.owl#SpeciesConcept_Objective")
+    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConcept_Objective")
   end
   if @se.se_type_phylogenetic?
-    xml.rdf(:type, "rdf:resource" => "http://rdf.taxonconcept.org/ont/txn.owl#SpeciesConcept_Phylogenetic")
+    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConcept_Phylogenetic")
   end
   if @se.se_type_biological?
-    xml.rdf(:type, "rdf:resource" => "http://rdf.taxonconcept.org/ont/txn.owl#SpeciesConcept_Biological")
+    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConcept_Biological")
   end
   xml.comment!("This Class is the primary topic of the related HTML and RDF descriptions")
   xml.foaf(:isPrimaryTopicOf, "rdf:resource" => @se_url)
@@ -102,40 +103,46 @@ end
   end
   xml.comment!("Mapping to other URI's for this species")
   if !@se_umbel_url.nil?
+    xml.comment!("Umbel Subject URI")
     xml.umbel(:isAligned, "rdf:resource"   => @se_umbel_url)
   end
-  xml.comment!("uBio LSID, could be many")
   if !@se_ubio_url.nil?
+     xml.comment!("uBio LSID, could be many")
      xml.skos(:relatedMatch, "rdf:resource" => @se_ubio_url)
   end
-  xml.comment!("Catalog of Life LSID")
   if !@se_col_url.nil?
+  xml.comment!("Catalog of Life LSID")
     xml.skos(:relatedMatch, "rdf:resource"=> @se_col_url)
   end
-  xml.comment!("Uniprot")
   if !@se_uniprot_url.nil?
+  xml.comment!("Uniprot URI")
     xml.skos(:closeMatch, "rdf:resource"=> @se_uniprot_url)
   end
-  xml.comment!("Bio2RDF")
   if !@se_bio2rdf_url.nil?
+  xml.comment!("Bio2RDF URI")
     xml.skos(:closeMatch, "rdf:resource"=> @se_bio2rdf_url)
   end
-  xml.comment!("DBpedia")
   if !@se_dbpedia_url.nil?
+    xml.comment!("DBpedia URI")
     xml.skos(:closeMatch, "rdf:resource"=> @se_dbpedia_url)
   end
-  xml.comment!("Freebase")
   if !@se_freebase_url.nil?
+  xml.comment!("Freebase URI")
     xml.skos(:closeMatch, "rdf:resource"=> @se_freebase_url)
   end
-  xml.comment!("OpenCyc")
   if !@se_opencyc_url.nil?
+    xml.comment!("OpenCyc URI")
     xml.skos(:closeMatch, "rdf:resource"=> @se_opencyc_url)
   end
-  xml.comment!("GeoSpecies")
+  if !@se_bbc_url.nil?
+    xml.comment!("BBC URI")
+    xml.skos(:closeMatch, "rdf:resource"=> @se_bbc_url + "#species")
+  end
   if !@se_geospecies_url.nil?
+    xml.comment!("GeoSpecies URI")
     xml.skos(:closeMatch, "rdf:resource"=> @se_geospecies_url)
   end
+
  end #class
 
 xml.comment!("Linked Data Linkouts")
@@ -188,10 +195,18 @@ xml.comment!("Linked Data Linkouts")
     end  
   end  
 
+  if !@se_bbc_url.nil?
+    xml.txn(:BBCSpecies, "rdf:about"  =>  @se_bbc_url + "#species" ) do
+      xml.skos(:closeMatch,    "rdf:resource"    => @se_uri)
+      xml.rdfs(:seeAlso,  "rdf:resource" => @se_bbc_url + ".rdf")
+    end  
+  end  
+
+
   if ! @se_name_uuid.nil?
-    xml.txn(:GNASynonym, "rdf:about"  =>  GNA_RDF_PREFIX + @se_name_uuid ) do
+    xml.gni(:NameString, "rdf:about"  =>  GNA_RDF_PREFIX + @se_name_uuid ) do
     xml.skos(:prefLabel, @se_name)
-    xml.rdfs(:seeAlso,  "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid)
+    xml.rdfs(:seeAlso,  "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid + ".rdf")
     xml.txn(:hasSpeciesTaxonConcept,    "rdf:resource"    => @se_uri)
     end  
   end  

@@ -6,7 +6,8 @@ class SesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @ses }
+      #format.xml  { render :xml => @ses }
+      format.rdf  {render :template => 'ses/index.rdf'}
     end
   end
 
@@ -25,15 +26,15 @@ class SesController < ApplicationController
       se_uid     = @se.se_uid
       se_uuid    = @se.se_uuid
       @se_name   = scientificname(@se.se_genus,@se.se_epithet,@se.se_author_year)
-# create GNI UUIDs for synonyms
-  @se_name_uuid              =  UUID.create_v5((@se.se_genus + " " + @se.se_epithet + " " + @se.se_author_year),GNA_NAMESPACE).guid
-#  @se_synonym_one_uuid       =  UUID.create_v5(@se.se_synonym_one,GNA_NAMESPACE).guid
-#  @se_synonym_two_uuid       =  UUID.create_v5(@se.se_synonym_two,GNA_NAMESPACE).guid
-#  @se_synonym_three_uuid     =  UUID.create_v5(@se.se_synonym_three,GNA_NAMESPACE).guid
-#  @se_synonym_four_uuid      =  UUID.create_v5(@se.se_synonym_four,GNA_NAMESPACE).guid
-#  @se_synonym_five_uuid      =  UUID.create_v5(@se.se_synonym_five,GNA_NAMESPACE).guid
-#  @se_basionym_uuid          =  UUID.create_v5(@se.se_basionym,GNA_NAMESPACE).guid
-#
+    # create GNI UUIDs for synonyms
+     @se_name_uuid              =  UUID.create_v5((@se.se_genus + " " + @se.se_epithet),GNA_NAMESPACE).guid
+  #  @se_synonym_one_uuid       =  UUID.create_v5(@se.se_synonym_one,GNA_NAMESPACE).guid
+  #  @se_synonym_two_uuid       =  UUID.create_v5(@se.se_synonym_two,GNA_NAMESPACE).guid
+  #  @se_synonym_three_uuid     =  UUID.create_v5(@se.se_synonym_three,GNA_NAMESPACE).guid
+  #  @se_synonym_four_uuid      =  UUID.create_v5(@se.se_synonym_four,GNA_NAMESPACE).guid
+  #  @se_synonym_five_uuid      =  UUID.create_v5(@se.se_synonym_five,GNA_NAMESPACE).guid
+  #  @se_basionym_uuid          =  UUID.create_v5(@se.se_basionym,GNA_NAMESPACE).guid
+  #
       @se_concept_name       =  concept_name(@se.se_genus,@se.se_epithet,@se.se_uid)
       @se_concept_id         =  concept_id(@se.se_uuid)
       @se_concept_name       =  concept_name(@se.se_genus,@se.se_epithet,@se.se_uid)
@@ -47,7 +48,7 @@ class SesController < ApplicationController
       @se_bold_url           =  bold_url(@se.se_bold)
       @se_col_url            =  col_url(@se.se_col)
       @se_col_id_url         =  col_id_url(@se.se_col_id)
-      @se_geospecies_url     =  geospecies_url(@se.se_bbc)
+      @se_geospecies_url     =  geospecies_url(@se.se_uid)
       @se_dbpedia_url        =  dbpedia_url(@se.se_dbpedia)
       @se_freebase_url       =  freebase_url(@se.se_freebase)
       @se_opencyc_url        =  opencyc_url(@se.se_opencyc)

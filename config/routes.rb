@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :ses
+  #map.resources :ses
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -42,8 +42,8 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing or commenting them out if you're using named routes and resources.
   # map.connect ':controller/:action/:id'
   # map.connect ':controller/:action/:id.:format'
-  map.connect  'ses/index.rdf',                 :controller => 'ses',  :action => 'index', :method => 'get', :format => 'rdf'
-  map.connect  'ses/:id',                       :controller => 'ses',  :action => 'show', :method => 'get'
-  map.connect  'ses/:id.html',                  :controller => 'ses',  :action => 'show', :method => 'get', :format => 'html'
-  map.connect  'ses/:id.rdf',                   :controller => 'ses',  :action => 'show', :method => 'get', :format => 'rdf'
+  map.connect  'ses/index.rdf',                 :controller => 'ses',  :action => 'index',  :method => 'get', :format => 'rdf'
+  map.connect  'ses/:id',                       :controller => 'ses',  :action => 'show',   :method => 'get'
+  map.connect  'ses/:id.html',                  :controller => 'ses',  :action => 'show',   :method => 'get', :format => 'html'
+  map.connect  'ses/:id.rdf',                   :controller => 'ses',  :action => 'show',   :method => 'get', :format => 'rdf'
 end

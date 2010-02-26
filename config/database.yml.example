@@ -1,0 +1,19 @@
+defaults: &defaults
+  adapter: mysql
+  username: root
+  #socket: /tmp/mysql.sock 
+  socket: /opt/local/var/run/mysql5/mysqld.sock
+  password:
+  host: localhost
+
+development:
+  database: tc_dev
+  <<: *defaults
+
+test:
+  database: tc_test
+  <<: *defaults
+
+production:
+  database: tc
+  <<: *defaults

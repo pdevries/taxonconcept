@@ -10,8 +10,16 @@ class ApplicationController < ActionController::Base
 
 #TODO This needs logic to deal with missing epithet etc.
   def scientificname(genus,epithet,author_year)
-     scientificname = (genus + " " + epithet)
-  end
+     if genus.nil? or epithet.nil?
+       scientificname = nil
+     else #
+       if author_year.nil?
+          scientificname = (genus + " " + epithet)
+       else
+         scientificname = (genus + " " + epithet  + " " + author_year) 
+       end #end if has at least partial name
+     end #if  
+  end # scientificname
 
 
   def concept_name(se_genus,se_epithet,se_uid)
@@ -158,9 +166,10 @@ class ApplicationController < ActionController::Base
         if bbc.nil?
            bbc_url = nil
         else
-        bbc_url = (BBC_PREFIX  + bbc)
+        bbc_url = (BBC_SPECIES_PREFIX  + bbc)
     end
   end
+
 
   def wikipedia_url(wikipedia)
         if wikipedia.nil?
