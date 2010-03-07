@@ -69,7 +69,7 @@ end
   xml.txn(:speciesHasOccurrenceTag, "rdf:resource" => @se_prefix + "#Occurrence")
   xml.txn(:speciesHasIndividualTag, "rdf:resource" => @se_prefix + "#Individual")
   xml.comment!("A species concept is some combination of objective, phylogenetic, biological")
-  xml.comment!("GNA UUID Synonyms")
+  xml.comment!("GNA UUID Synonyms, the predicate here might change to speciesHasGNASynonym")
   if !@se_name_uuid.nil?
     xml.txn(:hasGNASynonym, "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid)
   end
@@ -207,7 +207,7 @@ xml.comment!("Linked Data Linkouts")
     xml.gni(:NameString, "rdf:about"  =>  GNA_RDF_PREFIX + @se_name_uuid ) do
     xml.skos(:prefLabel, @se_name)
     xml.rdfs(:seeAlso,  "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid + ".rdf")
-    xml.txn(:hasSpeciesTaxonConcept,    "rdf:resource"    => @se_uri)
+    xml.txn(:synonymHasSpeciesTaxonConcept,    "rdf:resource"    => @se_uri)
     end  
   end  
 
