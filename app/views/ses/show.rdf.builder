@@ -27,7 +27,7 @@ xml.rdf(:Description, "rdf:about" => @se_rdf) do
   xml.dcterms(:publisher, "rdf:resource" => PUBLISHER_URI)
   xml.dcterms(:creator, "rdf:resource"   => CREATOR1_URI)
   xml.dcterms(:creator, "rdf:resource"   => CREATOR2_URI)
-  xml.dcterms(:description, 'TaxonConcept Knowledge Base RDF: ' +  @se_concept_name)
+  xml.dcterms(:description, 'TaxonConcept Knowledge Base RDF ' +  @se_concept_name)
   xml.dcterms(:identifier, @se_rdf)
   xml.dcterms(:language, 'en')
   xml.dcterms(:isPartOf, "rdf:resource" => DATASET_URI )
@@ -41,7 +41,7 @@ end
 
  xml.owl(:Class, "rdf:about"    => @se_uri) do
   xml.rdfs(:subClassOf,  "rdf:resource" => ONTOLOGY + "SpeciesConcept")
-  xml.rdf(:type, "rdf:resource" => "http://lod.taxonconcept.org/ontology/txn.owl#SpeciesEntityConcept")
+  xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesEntityConcept")
   xml.dcterms(:title, @se_concept_name)
   xml.dcterms(:modified, @se.updated_at.strftime('%Y-%m-%dT%H:%M:%S%z'))
   xml.dcterms(:identifier, @se_uri)
@@ -65,22 +65,22 @@ end
   xml.txn(:speciesHasTaxonomicDescription, "rdf:resource" => "http://www.example.org/publication1.rdf")
   xml.txn(:speciesHasTaxonomicDescription, "rdf:resource" => "http://www.example.org/publication2.rdf")
   xml.comment!("Tags records based on various 'perspectives' on this species")
-  xml.txn(:speciesHasTopicTag,      "rdf:resource" => @se_uri + "#Topic")
-  xml.txn(:speciesHasOccurrenceTag, "rdf:resource" => @se_uri + "#Occurrence")
-  xml.txn(:speciesHasIndividualTag, "rdf:resource" => @se_uri + "#Individual")
+  xml.txn(:speciesHasTopicTag,      "rdf:resource" => @se_prefix + "#Topic")
+  xml.txn(:speciesHasOccurrenceTag, "rdf:resource" => @se_prefix + "#Occurrence")
+  xml.txn(:speciesHasIndividualTag, "rdf:resource" => @se_prefix + "#Individual")
   xml.comment!("A species concept is some combination of objective, phylogenetic, biological")
   xml.comment!("GNA UUID Synonyms")
   if !@se_name_uuid.nil?
     xml.txn(:hasGNASynonym, "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid)
   end
   if @se.se_type_objective?
-    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConcept_Objective")
+    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptType_Objective")
   end
   if @se.se_type_phylogenetic?
-    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConcept_Phylogenetic")
+    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptType_Phylogenetic")
   end
   if @se.se_type_biological?
-    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConcept_Biological")
+    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptType_Biological")
   end
   xml.comment!("This Class is the primary topic of the related HTML and RDF descriptions")
   xml.foaf(:isPrimaryTopicOf, "rdf:resource" => @se_url)
@@ -112,7 +112,7 @@ end
   end
   if !@se_col_url.nil?
   xml.comment!("Catalog of Life LSID")
-    xml.skos(:relatedMatch, "rdf:resource"=> @se_col_url)
+    xml.skos(:closeMatch, "rdf:resource"=> @se_col_url)
   end
   if !@se_uniprot_url.nil?
   xml.comment!("Uniprot URI")

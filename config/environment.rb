@@ -55,6 +55,7 @@ SPECIES_ID_PREFIX                                    = "urn:lsid:globalnames.org
 # Constants for ONTOLOGY's
 ONTOLOGY                                             = "http://lod.taxonconcept.org/ontology/txn.owl#"
 GNI_ONTOLOGY                                         = "http://www.globalnames.org/ontology/gni.owl#"
+GEOSPECIES_ONTOLOGY                                  = "http://lod.geospecies.org/ontology/geospecies.owl#"
 BBC_SPECIES_PREFIX                                   = "http://www.bbc.co.uk/nature/species/"
 SPECIES_DOCUMENTATION_PREFIX                         = "http://lod.taxonconcept.org/se_owl/"
 SEO_ONTOLOGY                                         = "http://www.taxonconcept.org/ont/se_v01/seo.owl#"

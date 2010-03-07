@@ -57,7 +57,8 @@ class SesController < ApplicationController
       @se_bbc_url            =  bbc_url(@se.se_bbc)
       @se_wikispecies        =  wikispecies_url(@se.se_wikispecies)
       @se_wikipedia          =  wikipedia_url(@se.se_wikipedia)
-      @se_uri                =  'http://lod.taxonconcept.org/ses/'     +  @se.se_uid
+      @se_prefix             =  'http://lod.taxonconcept.org/ses/'     +  @se.se_uid
+      @se_uri                =  'http://lod.taxonconcept.org/ses/'     +  @se.se_uid  + '#species'
       @se_url                =  'http://lod.taxonconcept.org/ses/'     +  @se.se_uid + '.html'
       @se_rdf                =  'http://lod.taxonconcept.org/ses/'     +  @se.se_uid + ".rdf"
 

@@ -1,3 +1,48 @@
+22347:
+  se_uid               : QZUKm
+  se_uuid              : 7d45b9ca-26d2-4f20-81e0-f70aec48d53d
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Insecta
+  se_order             : Hymenoptera
+  se_family            : Vespidae
+  se_genus             : Dolichovespula
+  se_epithet           : maculata
+  se_author_year       : (Linnaeus, 1763)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 7441
+  se_ubio              : 
+  se_itis              : 154260
+  se_gbif              : 14587800
+  se_eol               : 239818
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : QZUKm
+  se_dbpedia           : Bald-faced_hornet
+  se_freebase          : guid.9202a8c04000641f80000000001eeef4
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : Bald-faced_hornet
+  se_wikispecies       : Dolichovespula_maculata
+
 22381:
   se_uid               : pv3Mv
   se_uuid              : 187818be-10f3-42e3-9644-2fc575fbb291
@@ -268,6 +313,96 @@
   se_wikipedia         : Polar_bear
   se_wikispecies       : Ursus_maritimus
 
+27255:
+  se_uid               : 9MMiL
+  se_uuid              : 986961fe-a3b3-40f7-825c-04da67e26bfd
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Strigiformes
+  se_family            : Tytonidae
+  se_genus             : Tyto
+  se_epithet           : alba
+  se_author_year       : (Scopoli, 1769)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 56313
+  se_ubio              : 
+  se_itis              : 177851
+  se_gbif              : 13852032
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : 9MMiL
+  se_dbpedia           : Barn_Owl
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Barn_Owl
+  se_wikipedia         : Barn_Owl
+  se_wikispecies       : Tyto_alba
+
+26794:
+  se_uid               : BkExL
+  se_uuid              : 2f612327-1e3d-433f-8ec8-c57d3c4f104c
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Passeriformes
+  se_family            : Turdidae
+  se_genus             : Turdus
+  se_epithet           : merula
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 9187
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : BkExL
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Common_Blackbird
+  se_wikipedia         : 
+  se_wikispecies       : Turdus_merula
+
 32269:
   se_uid               : r7sBX
   se_uuid              : f281ff53-3b3d-4bc6-8344-9842c524fdc0
@@ -312,6 +447,51 @@
   se_bbc               : Amazonian_Manatee
   se_wikipedia         : 
   se_wikispecies       : Trichechus_inunguis
+
+25690:
+  se_uid               : dzTLw
+  se_uuid              : 1af58a05-e81d-4978-ae5d-f4a2b9183022
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Ciconiiformes
+  se_family            : Threskiornithidae
+  se_genus             : Theristicus
+  se_epithet           : caudatus
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 399597
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : dzTLw
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Buff-necked_Ibis
+  se_wikipedia         : 
+  se_wikispecies       : Theristicus_caudatus
 
 32661:
   se_uid               : cbCqf
@@ -448,6 +628,141 @@
   se_wikipedia         : Wild_boar
   se_wikispecies       : Sus_scrofa
 
+26576:
+  se_uid               : KfOVX
+  se_uuid              : aa020668-4dd5-43ce-8730-7c0f03665e59
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Passeriformes
+  se_family            : Sturnidae
+  se_genus             : Sturnus
+  se_epithet           : vulgaris
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 9172
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : KfOVX
+  se_dbpedia           : European_Starling
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : European_Starling
+  se_wikipedia         : European_Starling
+  se_wikispecies       : Sturnus_vulgaris
+
+27220:
+  se_uid               : Kmtil
+  se_uuid              : d1f4a5d3-8f64-44b4-8871-99c47990f418
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Strigiformes
+  se_family            : Strigidae
+  se_genus             : Athene
+  se_epithet           : cunicularia
+  se_author_year       : (Molina, 1782)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 194338
+  se_ubio              : 
+  se_itis              : 177946
+  se_gbif              : 13837095
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : Kmtil
+  se_dbpedia           : Burrowing_Owl
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Burrowing_Owl
+  se_wikipedia         : Burrowing_Owl
+  se_wikispecies       : Athene_cunicularia
+
+25650:
+  se_uid               : mT5Yw
+  se_uuid              : 6893b390-3e0c-46e9-8ad6-164eedf0a037
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Charadriiformes
+  se_family            : Stercorariidae
+  se_genus             : Stercorarius
+  se_epithet           : maccormicki
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 395889
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : mT5Yw
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : South_Polar_Skua
+  se_wikipedia         : 
+  se_wikispecies       : Stercorarius_maccormicki
+
 25651:
   se_uid               : D8qet
   se_uuid              : c12c57bf-6ba3-4b72-aaf0-029c6b7395ac
@@ -537,6 +852,51 @@
   se_bbc               : Gunnison's_Prairie_Dog
   se_wikipedia         : 
   se_wikispecies       : Cynomys_gunnisoni
+
+31959:
+  se_uid               : y7Iqt
+  se_uuid              : 0b5d4864-1951-4083-a7b2-ac0906f44e78
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Rodentia
+  se_family            : Sciuridae
+  se_genus             : Cynomys
+  se_epithet           : ludovicianus
+  se_author_year       : (Ord, 1815)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 45480
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : y7Iqt
+  se_dbpedia           : Black-tailed_Prairie_Dog
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Black-tailed_Prairie_Dog
+  se_wikipedia         : Black-tailed_Prairie_Dog
+  se_wikispecies       : Cynomys_ludovicianus
 
 32140:
   se_uid               : mEgnu
@@ -718,6 +1078,51 @@
   se_wikipedia         : Eidolon_helvum
   se_wikispecies       : Eidolon_helvum
 
+28564:
+  se_uid               : GdERl
+  se_uuid              : eb33c680-032e-470c-97ad-d292c1ad735c
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Chiroptera
+  se_family            : Pteropodidae
+  se_genus             : Syconycteris
+  se_epithet           : australis
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 58085
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : GdERl
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Common_Blossom_Bat
+  se_wikipedia         : 
+  se_wikispecies       : Syconycteris_australis
+
 27812:
   se_uid               : Z2OP8
   se_uuid              : 8e0adba6-460b-4183-90a3-1a40540827e0
@@ -807,6 +1212,96 @@
   se_bbc               : Raccoon
   se_wikipedia         : Raccoon
   se_wikispecies       : Procyon_lotor
+
+27095:
+  se_uid               : kYlcv
+  se_uuid              : 429fb38f-9b30-4f96-bf3b-c17139e6164e
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Podicipediformes
+  se_family            : Podicipedidae
+  se_genus             : Aechmophorus
+  se_epithet           : occidentalis
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 57236
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : kYlcv
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Clark%27s_Grebe
+  se_wikipedia         : 
+  se_wikispecies       : Aechmophorus_occidentalis
+
+29920:
+  se_uid               : pDyGl
+  se_uuid              : 4b1ce4d7-3337-425e-b1ed-cb3a5f8cfa0e
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Primates
+  se_family            : Pitheciidae
+  se_genus             : Cacajao
+  se_epithet           : calvus
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 30596
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : pDyGl
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Bald_Uakari
+  se_wikipedia         : 
+  se_wikispecies       : Cacajao_calvus
 
 27785:
   se_uid               : RBAr7
@@ -1077,6 +1572,96 @@
   se_bbc               : Baikal_Seal
   se_wikipedia         : Baikal_Seal
   se_wikispecies       : Pusa_sibirica
+
+25916:
+  se_uid               : Bua25
+  se_uuid              : 262d749a-8f05-4a5f-9ce3-9eee184e49da
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Galliformes
+  se_family            : Phasianidae
+  se_genus             : Phasianus
+  se_epithet           : colchicus
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 9054
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : Bua25
+  se_dbpedia           : Common_Pheasant
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Common_Pheasant
+  se_wikipedia         : Common_Pheasant
+  se_wikispecies       : Phasianus_colchicus
+
+23811:
+  se_uid               : wbbPl
+  se_uuid              : 8b5ec543-31e6-4e56-b518-8aec03798d99
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Insecta
+  se_order             : Lepidoptera
+  se_family            : Papilionidae
+  se_genus             : Papilio
+  se_epithet           : canadensis
+  se_author_year       : Rothschild and Jordan, 1906
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 77246
+  se_ubio              : 6447841
+  se_itis              : 188549
+  se_gbif              : 14710157
+  se_eol               : 130853
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : wbbPl
+  se_dbpedia           : Papilio_canadensis
+  se_freebase          : guid.9202a8c04000641f800000000943017e
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : Papilio_canadensis
+  se_wikispecies       : Papilio_canadensis
 
 27769:
   se_uid               : 4QNQ3
@@ -1393,6 +1978,51 @@
   se_wikipedia         : Walrus
   se_wikispecies       : Odobenus_rosmarus
 
+23689:
+  se_uid               : ICmLC
+  se_uuid              : e096643b-ff98-4f51-bd80-3ff0ca88a924
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Insecta
+  se_order             : Lepidoptera
+  se_family            : Nymphalidae
+  se_genus             : Boloria
+  se_epithet           : selene
+  se_author_year       : Denis and Schiffermuller 1775
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 191398
+  se_ubio              : 
+  se_itis              : 188567
+  se_gbif              : 14079608
+  se_eol               : 153658
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : ICmLC
+  se_dbpedia           : Small_Pearl-bordered_Fritillary
+  se_freebase          : guid.9202a8c04000641f80000000006de60c
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : Small_Pearl-bordered_Fritillary
+  se_wikispecies       : 
+
 23707:
   se_uid               : mCcSp
   se_uuid              : b480d31e-7202-45be-8149-32841d56d11b
@@ -1424,7 +2054,7 @@
   se_ubio              : 9716923
   se_itis              : 117273
   se_gbif              : 14760953
-  se_eol               : 
+  se_eol               : 2682739
   se_bold              : 
   se_col_id            : 
   se_col               : 
@@ -1437,6 +2067,186 @@
   se_bbc               : Monarch_(butterfly)
   se_wikipedia         : Monarch_%28butterfly%29
   se_wikispecies       : Danaus_plexippus
+
+23728:
+  se_uid               : AFYz2
+  se_uuid              : 148484d3-46b3-4b5a-9bad-6be84583c30c
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Insecta
+  se_order             : Lepidoptera
+  se_family            : Nymphalidae
+  se_genus             : Junonia
+  se_epithet           : coenia
+  se_author_year       : Hubner 1816-1824
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 39708
+  se_ubio              : 
+  se_itis              : 778049
+  se_gbif              : 14071670
+  se_eol               : 163027
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : AFYz2
+  se_dbpedia           : Junonia_coenia
+  se_freebase          : guid.9202a8c04000641f80000000006a4966
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : Junonia_coenia
+  se_wikispecies       : Junonia_coenia
+
+23754:
+  se_uid               : IJVMg
+  se_uuid              : 03e189fe-55ef-452f-ab69-362a9c17d736
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Insecta
+  se_order             : Lepidoptera
+  se_family            : Nymphalidae
+  se_genus             : Phyciodes
+  se_epithet           : cocyta
+  se_author_year       : Cramer 1779
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 113348
+  se_ubio              : 
+  se_itis              : 778095
+  se_gbif              : 
+  se_eol               : 162700
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : IJVMg
+  se_dbpedia           : Phyciodes_cocyta
+  se_freebase          : guid.9202a8c04000641f800000000927b996
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : Phyciodes_cocyta
+  se_wikispecies       : 
+
+23786:
+  se_uid               : dwAmr
+  se_uuid              : 22e52f29-be09-4196-a77e-7c96123c6991
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Insecta
+  se_order             : Lepidoptera
+  se_family            : Nymphalidae
+  se_genus             : Vanessa
+  se_epithet           : cardui
+  se_author_year       : (Linnaeus)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 171605
+  se_ubio              : 
+  se_itis              : 188601
+  se_gbif              : 
+  se_eol               : 2682820
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : dwAmr
+  se_dbpedia           : Vanessa_cardui
+  se_freebase          : guid.9202a8c04000641f8000000008d3761a
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : Vanessa_cardui
+  se_wikispecies       : Vanessa_cardui
+
+24125:
+  se_uid               : 4fx89
+  se_uuid              : 6916c470-86cb-448d-8488-c0ca3ef1a9b8
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Insecta
+  se_order             : Neuroptera
+  se_family            : Myrmeleontidae
+  se_genus             : Myrmeleon
+  se_epithet           : immaculatus
+  se_author_year       : De Geer, 1773
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 50438
+  se_ubio              : 
+  se_itis              : 666530
+  se_gbif              : 13774691
+  se_eol               : 463480
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : 4fx89
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : 
+  se_wikispecies       : 
 
 29586:
   se_uid               : 8VWNn
@@ -1707,6 +2517,96 @@
   se_bbc               : European_Polecat
   se_wikipedia         : European_Polecat
   se_wikispecies       : Mustela_putorius
+
+31639:
+  se_uid               : UyWDQ
+  se_uuid              : c234513e-5dc1-47c9-8629-984cca10b5a6
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Rodentia
+  se_family            : Muridae
+  se_genus             : Parotomys
+  se_epithet           : brantsii
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 121578
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : UyWDQ
+  se_dbpedia           : Parotomys_brantsii
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Brants%27s_Whistling_Rat
+  se_wikipedia         : Parotomys_brantsii
+  se_wikispecies       : 
+
+27908:
+  se_uid               : zxLp7
+  se_uuid              : 820b7dfb-b1e4-4628-871a-2dadbfcd6f11
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Cetacea
+  se_family            : Monodontidae
+  se_genus             : Delphinapterus
+  se_epithet           : leucas
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 9749
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : zxLp7
+  se_dbpedia           : Beluga_%28whale%29
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Beluga_%28whale%29
+  se_wikipedia         : Beluga_%28whale%29
+  se_wikispecies       : Delphinapterus_leucas
 
 27699:
   se_uid               : E4TKF
@@ -2068,6 +2968,96 @@
   se_wikipedia         : 
   se_wikispecies       : Petrogale_penicillata
 
+32989:
+  se_uid               : PILPE
+  se_uuid              : 5d5dced2-d0a6-4e3a-bba4-865952aca520
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Plantae
+  se_phylum            : Magnoliophyta
+  se_class             : Liliopsida
+  se_order             : Liliales
+  se_family            : Liliaceae
+  se_genus             : Galanthus
+  se_epithet           : nivalis
+  se_author_year       : L.
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 4670
+  se_ubio              : 
+  se_itis              : 502704
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : PILPE
+  se_dbpedia           : Galanthus_nivalis
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Galanthus_nivalis
+  se_wikipedia         : Galanthus_nivalis
+  se_wikispecies       : Galanthus_nivalis
+
+32996:
+  se_uid               : X3VAA
+  se_uuid              : ed53b014-7d2e-4b72-8124-ce01e036a167
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Plantae
+  se_phylum            : Magnoliophyta
+  se_class             : Liliopsida
+  se_order             : Liliales
+  se_family            : Liliaceae
+  se_genus             : Hyacinthoides
+  se_epithet           : non-scripta
+  se_author_year       : (L.) Chouard ex Rothm.
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 81762
+  se_ubio              : 
+  se_itis              : 503094
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : X3VAA
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Common_Bluebell
+  se_wikipedia         : 
+  se_wikispecies       : Hyacinthoides_non-scripta
+
 29426:
   se_uid               : vKuIm
   se_uuid              : f5e928f2-644c-4c3a-ab8b-8d4c62874a11
@@ -2112,6 +3102,96 @@
   se_bbc               : European_Hare
   se_wikipedia         : European_Hare
   se_wikispecies       : Lepus_europaeus
+
+29443:
+  se_uid               : yGYjF
+  se_uuid              : 5d959c3b-9c8b-4b2c-90bc-d4da4f061f46
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Lagomorpha
+  se_family            : Leporidae
+  se_genus             : Lepus
+  se_epithet           : timidus
+  se_author_year       : Linnaeus, 1758
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 62621
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : yGYjF
+  se_dbpedia           : Mountain_Hare
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Mountain_Hare
+  se_wikipedia         : Mountain_Hare
+  se_wikispecies       : Lepus_timidus
+
+29449:
+  se_uid               : BPoM4
+  se_uuid              : 92dbed48-2eb8-4a28-9341-39ff50820358
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Lagomorpha
+  se_family            : Leporidae
+  se_genus             : Oryctolagus
+  se_epithet           : cuniculus
+  se_author_year       : (Linnaeus, 1758)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 9986
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : BPoM4
+  se_dbpedia           : European_Rabbit
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : European_Rabbit
+  se_wikipedia         : European_Rabbit
+  se_wikispecies       : Oryctolagus_cuniculus
 
 32788:
   se_uid               : xT2QU
@@ -2202,6 +3282,51 @@
   se_bbc               : Herring_Gull
   se_wikipedia         : 
   se_wikispecies       : Larus_argentatus
+
+25567:
+  se_uid               : 4M7lk
+  se_uuid              : cca27c18-179a-452b-87f3-1b6681248167
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Charadriiformes
+  se_family            : Laridae
+  se_genus             : Rissa
+  se_epithet           : tridactyla
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 75485
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : 4M7lk
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Black-legged_Kittiwake
+  se_wikipedia         : 
+  se_wikispecies       : Rissa_tridactyla
 
 27282:
   se_uid               : 9QkhN
@@ -2427,6 +3552,51 @@
   se_bbc               : Siamang
   se_wikipedia         : 
   se_wikispecies       : Symphalangus_syndactylus
+
+27111:
+  se_uid               : i3XH6
+  se_uuid              : 8bb3c1de-4fcc-487e-80ee-4545077a3cb4
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Procellariiformes
+  se_family            : Hydrobatidae
+  se_genus             : Hydrobates
+  se_epithet           : pelagicus
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 79651
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : i3XH6
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : European_Storm-petrel
+  se_wikipedia         : 
+  se_wikispecies       : Hydrobates_pelagicus
 
 29852:
   se_uid               : mzaQ6
@@ -2698,6 +3868,51 @@
   se_wikipedia         : Bornean_Orangutan
   se_wikispecies       : Pongo_pygmaeus
 
+26306:
+  se_uid               : tEeiX
+  se_uuid              : db0b6a8e-57c4-47e8-9b4b-dd0b895abd06
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Passeriformes
+  se_family            : Hirundinidae
+  se_genus             : Hirundo
+  se_epithet           : rustica
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 43150
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : tEeiX
+  se_dbpedia           : Barn_Swallow
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Barn_Swallow
+  se_wikipedia         : Barn_Swallow
+  se_wikispecies       : Hirundo_rustica
+
 27534:
   se_uid               : gUD9N
   se_uuid              : 4110dfac-89d3-42ee-bb2f-87c98440837b
@@ -2877,6 +4092,96 @@
   se_bbc               : Giraffe
   se_wikipedia         : Giraffe
   se_wikispecies       : Giraffa_camelopardalis
+
+25922:
+  se_uid               : zNToQ
+  se_uuid              : 331ec343-83d3-46ba-9f65-88d7fb233bc4
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Gaviiformes
+  se_family            : Gaviidae
+  se_genus             : Gavia
+  se_epithet           : arctica
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 57069
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : zNToQ
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Black-throated_Loon
+  se_wikipedia         : 
+  se_wikispecies       : Gavia_arctica
+
+26233:
+  se_uid               : 2Dqxa
+  se_uuid              : 4da63e1c-5770-440f-9ed3-4a2ed17e1e94
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Passeriformes
+  se_family            : Fringillidae
+  se_genus             : Loxia
+  se_epithet           : curvirostra
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 64802
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : 2Dqxa
+  se_dbpedia           : Common_Crossbill
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Common_Crossbill
+  se_wikipedia         : Common_Crossbill
+  se_wikispecies       : Loxia_curvirostra
 
 27617:
   se_uid               : lGGpI
@@ -3238,6 +4543,51 @@
   se_wikipedia         : Snow_Leopard
   se_wikispecies       : Uncia_uncia
 
+25850:
+  se_uid               : mdkiV
+  se_uuid              : 567bd286-9b9a-46a7-8611-5fb08f7fc1d3
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Falconiformes
+  se_family            : Falconidae
+  se_genus             : Falco
+  se_epithet           : peregrinus
+  se_author_year       : Tunstall, 1771
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 8954
+  se_ubio              : 
+  se_itis              : 175604
+  se_gbif              : 13810203
+  se_eol               : 1049164
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : mdkiV
+  se_dbpedia           : Peregrine_Falcon
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Peregrine_falcon
+  se_wikipedia         : Peregrine_Falcon
+  se_wikispecies       : Falco_peregrinus
+
 25855:
   se_uid               : wTiD8
   se_uuid              : 21bc5e75-41d1-47d2-a800-dbb14fe09834
@@ -3282,6 +4632,51 @@
   se_bbc               : Common_Kestrel
   se_wikipedia         : Common_Kestrel
   se_wikispecies       : Falco_tinnunculus
+
+35495:
+  se_uid               : EY8Z6
+  se_uuid              : 3a27b2d2-b5d1-4f1b-9589-51d3acd26d78
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Plantae
+  se_phylum            : Magnoliophyta
+  se_class             : Magnoliopsida
+  se_order             : Fagales
+  se_family            : Fagaceae
+  se_genus             : Castanea
+  se_epithet           : dentata
+  se_author_year       : (Marsh.) Borkh.
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 134033
+  se_ubio              : 448477
+  se_itis              : 19454
+  se_gbif              : 14245069
+  se_eol               : 1148514
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : EY8Z6
+  se_dbpedia           : American_Chestnut
+  se_freebase          : guid.9202a8c04000641f800000000007e206
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : American_Chestnut
+  se_wikispecies       : Castanea_dentata
 
 29393:
   se_uid               : BVi7g
@@ -3418,6 +4813,51 @@
   se_wikipedia         : Loxodonta_africana
   se_wikispecies       : Loxodonta_africana
 
+29969:
+  se_uid               : upfbm
+  se_uuid              : 1c0a2fae-6df7-40aa-894b-06536554f574
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Proboscidea
+  se_family            : Elephantidae
+  se_genus             : Loxodonta
+  se_epithet           : cyclotis
+  se_author_year       : (Matschie, 1900)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 99490
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 289547
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : upfbm
+  se_dbpedia           : African_Forest_Elephant
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : African_Forest_Elephant
+  se_wikipedia         : African_Forest_Elephant
+  se_wikispecies       : Loxodonta_cyclotis
+
 32267:
   se_uid               : R5wXi
   se_uuid              : e014013d-7060-47d5-a511-ea735e70a5e4
@@ -3508,6 +4948,51 @@
   se_wikipedia         : 
   se_wikispecies       : Delphinus_delphis
 
+27903:
+  se_uid               : B4grE
+  se_uuid              : 49e49a67-4a8e-4546-a54c-ef013171fdaa
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Cetacea
+  se_family            : Delphinidae
+  se_genus             : Tursiops
+  se_epithet           : truncatus
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 9739
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : B4grE
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Common_Bottlenose_Dolphin
+  se_wikipedia         : 
+  se_wikispecies       : Tursiops_truncatus
+
 29832:
   se_uid               : DxCSv
   se_uuid              : 30876b6a-990c-4138-a939-3497bc81af5d
@@ -3552,6 +5037,51 @@
   se_bbc               : Aye-aye
   se_wikipedia         : Aye-aye
   se_wikispecies       : Daubentonia_madagascariensis
+
+29092:
+  se_uid               : T3RbY
+  se_uuid              : 4d201c0d-cb4a-4a8f-86f6-2c243796fb31
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Dasyuromorphia
+  se_family            : Dasyuridae
+  se_genus             : Dasycercus
+  se_epithet           : cristicauda
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 32542
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : T3RbY
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Crest-tailed_Mulgara
+  se_wikipedia         : 
+  se_wikispecies       : Dasycercus_cristicauda
 
 29128:
   se_uid               : krlQq
@@ -3642,6 +5172,141 @@
   se_bbc               : Southern_Three-banded_Armadillo
   se_wikipedia         : 
   se_wikispecies       : Tolypeutes_matacus
+
+25775:
+  se_uid               : UpQ47
+  se_uuid              : e3505657-8f52-46a7-bd79-ea6806fe8a12
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Cuculiformes
+  se_family            : Cuculidae
+  se_genus             : Cuculus
+  se_epithet           : canorus
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 55661
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : UpQ47
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Common_Cuckoo
+  se_wikipedia         : 
+  se_wikispecies       : Cuculus_canorus
+
+30135:
+  se_uid               : thDNo
+  se_uuid              : 219c1c48-046b-47a5-b32d-1eb297344853
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Rodentia
+  se_family            : Cricetidae
+  se_genus             : Arvicola
+  se_epithet           : amphibius
+  se_author_year       : (Linnaeus, 1758)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : thDNo
+  se_dbpedia           : European_Water_Vole
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : European_Water_Vole
+  se_wikipedia         : European_Water_Vole
+  se_wikispecies       : Arvicola_amphibius
+
+30291:
+  se_uid               : cIBva
+  se_uuid              : 210549b2-780a-4031-a1f1-126c76b99054
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Rodentia
+  se_family            : Cricetidae
+  se_genus             : Microtus
+  se_epithet           : agrestis
+  se_author_year       : (Linnaeus, 1761)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 29092
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : cIBva
+  se_dbpedia           : Field_Vole
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Field_vole
+  se_wikipedia         : Field_Vole
+  se_wikispecies       : Microtus_agrestis
 
 30537:
   se_uid               : 6NlQa
@@ -4093,6 +5758,51 @@
   se_wikipedia         : 
   se_wikispecies       : Theropithecus_gelada
 
+29799:
+  se_uid               : i9vF7
+  se_uuid              : d0ef2628-8518-407f-bd1d-48a912e629b6
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Primates
+  se_family            : Cercopithecidae
+  se_genus             : Trachypithecus
+  se_epithet           : francoisi
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 54180
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : i9vF7
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Francois%27_Langur
+  se_wikipedia         : 
+  se_wikispecies       : Trachypithecus_francoisi
+
 29644:
   se_uid               : DiEnK
   se_uuid              : 247e363f-853e-4819-95a4-e5679fbb3d9e
@@ -4182,6 +5892,96 @@
   se_bbc               : Capybara
   se_wikipedia         : 
   se_wikispecies       : Hydrochoerus_hydrochaeris
+
+25841:
+  se_uid               : SgbRm
+  se_uuid              : 4ff063f1-e5d8-4f10-a7a1-9f88a4fdb8e4
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Falconiformes
+  se_family            : Cathartidae
+  se_genus             : Coragyps
+  se_epithet           : atratus
+  se_author_year       : (Bechstein, 1793)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 33614
+  se_ubio              : 
+  se_itis              : 175272
+  se_gbif              : 13816252
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : SgbRm
+  se_dbpedia           : American_Black_Vulture
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : American_Black_Vulture
+  se_wikipedia         : American_Black_Vulture
+  se_wikispecies       : Coragyps_atratus
+
+27577:
+  se_uid               : tknII
+  se_uuid              : c4d6f0f2-7f89-46db-84cb-af15117b945e
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Carnivora
+  se_family            : Canidae
+  se_genus             : Canis
+  se_epithet           : lupus
+  se_author_year       : Linnaeus, 1758
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 9612
+  se_ubio              : 2478094
+  se_itis              : 180596
+  se_gbif              : 13808644
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : tknII
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Gray_Wolf
+  se_wikipedia         : 
+  se_wikispecies       : 
 
 27580:
   se_uid               : G92Fi
@@ -4498,6 +6298,96 @@
   se_wikipedia         : Red_Fox
   se_wikispecies       : Vulpes_vulpes
 
+27477:
+  se_uid               : aPQNX
+  se_uuid              : a86efc4e-d524-4467-a1a3-a88661ec2bb2
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Artiodactyla
+  se_family            : Camelidae
+  se_genus             : Camelus
+  se_epithet           : bactrianus
+  se_author_year       : Linnaeus, 1758
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 9837
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : aPQNX
+  se_dbpedia           : Bactrian_Camel
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Bactrian_Camel
+  se_wikipedia         : Bactrian_Camel
+  se_wikispecies       : Camelus_bactrianus
+
+25185:
+  se_uid               : kQmp4
+  se_uuid              : c2c4268a-337f-4c6f-82e4-b1614a595eb3
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Amphibia
+  se_order             : Anura
+  se_family            : Bufonidae
+  se_genus             : Bufo
+  se_epithet           : americanus
+  se_author_year       : Holbrook, 1836
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 8389
+  se_ubio              : 26002
+  se_itis              : 173473
+  se_gbif              : 13825622
+  se_eol               : 1019159
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : kQmp4
+  se_dbpedia           : American_toad
+  se_freebase          : guid.9202a8c04000641f8000000000786a29
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : American_toad
+  se_wikispecies       : Bufo_americanus
+
 29582:
   se_uid               : gl7Md
   se_uuid              : 2292ef81-017e-4f3d-a08d-71d358b013d9
@@ -4632,6 +6522,96 @@
   se_bbc               : Markhor
   se_wikipedia         : Markhor
   se_wikispecies       : Capra_falconeri
+
+27362:
+  se_uid               : Jmfr8
+  se_uuid              : fd2da7d5-a7ab-4bcf-9b75-4942b4ac0ddc
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Artiodactyla
+  se_family            : Bovidae
+  se_genus             : Capra
+  se_epithet           : nubiana
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 72543
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : Jmfr8
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Nubian_Ibex
+  se_wikipedia         : 
+  se_wikispecies       : Capra_nubiana
+
+27365:
+  se_uid               : UT49N
+  se_uuid              : f545bd9c-657a-4d43-bf12-4116b48acec7
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Artiodactyla
+  se_family            : Bovidae
+  se_genus             : Capra
+  se_epithet           : walie
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 509850
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : UT49N
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Walia_Ibex
+  se_wikipedia         : 
+  se_wikispecies       : Capra_walie
 
 27388:
   se_uid               : F4ARw
@@ -4993,6 +6973,51 @@
   se_wikipedia         : African_Buffalo
   se_wikispecies       : Syncerus_caffer
 
+27472:
+  se_uid               : WcRD3
+  se_uuid              : 1e3e323b-5b8f-4233-9384-a7417e78eae8
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Mammalia
+  se_order             : Artiodactyla
+  se_family            : Bovidae
+  se_genus             : Tragelaphus
+  se_epithet           : eurycerus
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 2
+  se_ncbi              : 69297
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : WcRD3
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Bongo_%28antelope%29
+  se_wikipedia         : 
+  se_wikispecies       : Tragelaphus_eurycerus
+
 29993:
   se_uid               : YioDX
   se_uuid              : 971e65b6-2cef-4fdf-8be8-cd343a90af47
@@ -5127,6 +7152,141 @@
   se_bbc               : Brown_Woolly_Monkey
   se_wikipedia         : Brown_Woolly_Monkey
   se_wikispecies       : Lagothrix_lagotricha
+
+525:
+  se_uid               : MYQMc
+  se_uuid              : 1eab68dd-9629-4f84-b58a-4fd4b7a4657e
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Insecta
+  se_order             : Coleoptera
+  se_family            : Anthicidae
+  se_genus             : Stereopalpus
+  se_epithet           : vestitus
+  se_author_year       : (Say, 1824)
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 
+  se_ubio              : 4822339
+  se_itis              : 685493
+  se_gbif              : 13844003
+  se_eol               : 685708
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : MYQMc
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : 
+  se_wikispecies       : 
+
+25268:
+  se_uid               : CrzS7
+  se_uuid              : 25118cca-9b74-4705-a22e-a3483d6a867c
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Chordata
+  se_class             : Aves
+  se_order             : Anseriformes
+  se_family            : Anatidae
+  se_genus             : Branta
+  se_epithet           : leucopsis
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 184711
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : CrzS7
+  se_dbpedia           : 
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Barnacle_Goose
+  se_wikipedia         : 
+  se_wikispecies       : Branta_leucopsis
+
+11:
+  se_uid               : QVEME
+  se_uuid              : 1f490c86-4aa3-4f30-87bb-70f789549b9a
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Arachnida
+  se_order             : Araneae
+  se_family            : Amaurobiidae
+  se_genus             : Amaurobius
+  se_epithet           : ferox
+  se_author_year       : 
+  se_rank              : species
+  se_synonym_one       : 
+  se_synonym_two       : 
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : 
+  se_ontology          : 
+  se_division_id       : 1
+  se_ncbi              : 336583
+  se_ubio              : 
+  se_itis              : 
+  se_gbif              : 
+  se_eol               : 
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 
+  se_geospecies        : QVEME
+  se_dbpedia           : Amaurobius_ferox
+  se_freebase          : 
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : Amaurobius_ferox
+  se_wikipedia         : Amaurobius_ferox
+  se_wikispecies       : 
 
 27572:
   se_uid               : ZZSyS

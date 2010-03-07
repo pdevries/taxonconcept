@@ -24,8 +24,9 @@ xml.rdf(:Description, "rdf:about" => 'http://lod.taxonconcept.org/ses/index.rdf'
   xml.dcterms(:modified, Time.now.strftime('%Y-%m-%dT%H:%M:%S%z'))
   xml.cc(:license, "rdf:resource" => LICENSE_URI)
   xml.cc(:attributionURL, "rdf:resource" => ATTRIBUTION_URL)
-  xml.foaf(:topic, "rdf:resource" => 'http://lod.taxonconcept.org/ses/index.rdf')
-  for se in @ses
+  xml.foaf(:topic,   "rdf:resource" => 'http://lod.taxonconcept.org/ses/index.rdf')
+  xml.rdfs(:seeAlso, "rdf:resource" => 'http://rdf.geospecies.org/ocs/index.rdf')
+   for se in @ses
     xml.rdfs(:seeAlso, "rdf:resource" => 'http://lod.taxonconcept.org/ses/'  +  se.se_uid + ".rdf")
   end #for se
 end
