@@ -5173,6 +5173,51 @@
   se_wikipedia         : 
   se_wikispecies       : Tolypeutes_matacus
 
+2080:
+  se_uid               : iuCXz
+  se_uuid              : 84b8badd-b899-40ea-8f89-f39f3048c270
+  se_active            : true
+  se_status            : Preliminary
+  se_replaced_by       : 
+  se_close_match       : 
+  se_type_objective    : true
+  se_type_phylogenetic : 
+  se_type_biological   : 
+  se_kingdom           : Animalia
+  se_phylum            : Arthropoda
+  se_class             : Insecta
+  se_order             : Diptera
+  se_family            : Culicidae
+  se_genus             : Ochlerotatus
+  se_epithet           : triseriatus
+  se_author_year       : (Say, 1823)
+  se_rank              : species
+  se_synonym_one       : Aedes triseriatus (Say, 1823)
+  se_synonym_two       : Culex triseriatus (Say, 1823)
+  se_synonym_three     : 
+  se_synonym_four      : 
+  se_synonym_five      : 
+  se_basionym          : Culex triseriatus Say, 1823
+  se_ontology          : http://www.taxonconcept.org/ses/iuCXz.owl
+  se_division_id       : 1
+  se_ncbi              : 7162
+  se_ubio              : 5435138
+  se_itis              : 126392
+  se_gbif              : 14862971
+  se_eol               : 740700
+  se_bold              : 
+  se_col_id            : 
+  se_col               : 3e3b2d81-52c2-102c-b3cd-957176fb88b9:ac2009
+  se_geospecies        : iuCXz
+  se_dbpedia           : Ochlerotatus_triseriatus
+  se_freebase          : guid.9202a8c04000641f800000000aaf4c66
+  se_opencyc           : 
+  se_umbel             : 
+  se_lc                : 
+  se_bbc               : 
+  se_wikipedia         : Ochlerotatus_triseriatus
+  se_wikispecies       : 
+
 25775:
   se_uid               : UpQ47
   se_uuid              : e3505657-8f52-46a7-bd79-ea6806fe8a12

@@ -40,8 +40,7 @@ xml.rdf(:Description, "rdf:about" => @se_rdf) do
 end
 
  xml.owl(:Class, "rdf:about"    => @se_uri) do
-  xml.rdfs(:subClassOf,  "rdf:resource" => ONTOLOGY + "SpeciesConcept")
-  xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesEntityConcept")
+  xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConcept")
   xml.dcterms(:title, @se_concept_name)
   xml.dcterms(:modified, @se.updated_at.strftime('%Y-%m-%dT%H:%M:%S%z'))
   xml.dcterms(:identifier, @se_uri)
@@ -60,27 +59,27 @@ end
     xml.txn(:author_year, @se.se_author_year)
   end
   xml.comment!("Link to Species Documentation Ontology")
-  xml.txn(:speciesAsDocumentedBy, "rdf:resource" =>  SPECIES_DOCUMENTATION_PREFIX + @se.se_uid)
+  xml.txn(:speciesConceptIsDocumentedByTaxonOntology, "rdf:resource" =>  SPECIES_DOCUMENTATION_PREFIX + @se.se_uid)
   xml.comment!("URI's to Publications")
-  xml.txn(:speciesHasTaxonomicDescription, "rdf:resource" => "http://www.example.org/publication1.rdf")
-  xml.txn(:speciesHasTaxonomicDescription, "rdf:resource" => "http://www.example.org/publication2.rdf")
+  xml.txn(:speciesConceptHasTaxonomicDescription, "rdf:resource" => "http://www.example.org/publication1.rdf")
+  xml.txn(:speciesConceptHasTaxonomicDescription, "rdf:resource" => "http://www.example.org/publication2.rdf")
   xml.comment!("Tags records based on various 'perspectives' on this species")
-  xml.txn(:speciesHasTopicTag,      "rdf:resource" => @se_prefix + "#Topic")
-  xml.txn(:speciesHasOccurrenceTag, "rdf:resource" => @se_prefix + "#Occurrence")
-  xml.txn(:speciesHasIndividualTag, "rdf:resource" => @se_prefix + "#Individual")
+  xml.txn(:speciesConceptHasSpeciesTopicTag,      "rdf:resource" => @se_prefix + "#Topic")
+  xml.txn(:speciesConceptHasSpeciesOccurrenceTag, "rdf:resource" => @se_prefix + "#Occurrence")
+  xml.txn(:speciesConceptHasSpeciesIndividualTag, "rdf:resource" => @se_prefix + "#Individual")
   xml.comment!("A species concept is some combination of objective, phylogenetic, biological")
   xml.comment!("GNA UUID Synonyms, the predicate here might change to speciesHasGNASynonym")
   if !@se_name_uuid.nil?
-    xml.txn(:hasGNASynonym, "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid)
+    xml.txn(:speciesConceptHasSpeciesNameString, "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid)
   end
   if @se.se_type_objective?
-    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptType_Objective")
+    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptTypeIsObjective")
   end
   if @se.se_type_phylogenetic?
-    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptType_Phylogenetic")
+    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptTypeIsPhylogenetic")
   end
   if @se.se_type_biological?
-    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptType_Biological")
+    xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptTypeIsBiological")
   end
   xml.comment!("This Class is the primary topic of the related HTML and RDF descriptions")
   xml.foaf(:isPrimaryTopicOf, "rdf:resource" => @se_url)
@@ -207,10 +206,26 @@ xml.comment!("Linked Data Linkouts")
     xml.gni(:NameString, "rdf:about"  =>  GNA_RDF_PREFIX + @se_name_uuid ) do
     xml.skos(:prefLabel, @se_name)
     xml.rdfs(:seeAlso,  "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid + ".rdf")
-    xml.txn(:synonymHasSpeciesTaxonConcept,    "rdf:resource"    => @se_uri)
+    xml.txn(:speciesNameStringHasSpeciesTaxonConcept,    "rdf:resource"    => @se_uri)
     end  
   end  
 
+xml.txn(:SpeciesOccurrenceTag,  "rdf:about" =>  @se_prefix + "#Occurrence") do
+   xml.skos(:prefLabel, "A Tag-like resource that is used to label occurrences of the species concept", @se_concept_name)
+   xml.txn(:speciesOccurrenceTagHasSpeciesConcept,    "rdf:resource"    => @se_uri)
+end
+
+xml.txn(:SpeciesIndividualTag,  "rdf:about" =>  @se_prefix + "#Individual") do
+  xml.skos(:prefLabel, "A Tag-like resource that is used to label individuals of the species concept", @se_concept_name)
+  xml.txn(:speciesIndividualTagHasSpeciesConcept,    "rdf:resource"    => @se_uri)
+end
+
+xml.txn(:SpeciesTopicTag,       "rdf:about" =>  @se_prefix + "#Topic") do
+  xml.skos(:prefLabel, "A Tag-like resource that is used to label the topic of species concept", @se_concept_name)
+  xml.txn(:speciesTopicTagHasSpeciesConcept,    "rdf:resource"    => @se_uri)
+end
+
+  
 
 xml.bibo(:Webpage, "rdf:about" =>  @se_url) do
   xml.dcterms(:title, @se_concept_name)
