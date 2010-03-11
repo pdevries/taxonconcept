@@ -205,6 +205,7 @@ xml.comment!("Linked Data Linkouts")
   if ! @se_name_uuid.nil?
     xml.gni(:NameString, "rdf:about"  =>  GNA_RDF_PREFIX + @se_name_uuid ) do
     xml.skos(:prefLabel, @se_name)
+    xml.dcterms(:identifier, GNA_RDF_PREFIX + @se_name_uuid)
     xml.rdfs(:seeAlso,  "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid + ".rdf")
     xml.txn(:speciesNameStringHasSpeciesTaxonConcept,    "rdf:resource"    => @se_uri)
     end  
