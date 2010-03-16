@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:txn="http://lod.taxonconcept.org/ontology/txn.owl#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:gni="http://www.globalnames.org/ontology/gni.owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:cc="http://creativecommons.org/ns#">
+
+  <rdf:Description rdf:about="http://lod.taxonconcept.org/about/index.rdf">
+    <dcterms:title>About: TaxonConcept.org</dcterms:title>
+    <dcterms:publisher rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept_Knowledge_Base_Project"/>
+    <dcterms:creator rdf:resource="http://lod.taxonconcept.org/ontology/people.owl#Peter_J_DeVries"/>
+    <dcterms:creator rdf:resource="http://lod.taxonconcept.org/ontology/people.owl#Dimtry_Mozzherin"/>
+    <dcterms:description>This is an RDF collection of species in the TaxonConcept Knowledge Base</dcterms:description>
+    <dcterms:identifier>http://lod.taxonconcept.org/about/index.rdf</dcterms:identifier>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:isPartOf rdf:resource="http://lod.taxonconcept.org/ontology/void#this"/>
+    <dcterms:modified>2010-03-05T16:48:48-0500</dcterms:modified>
+    <cc:license rdf:resource="http://creativecommons.org/publicdomain/"/>
+    <cc:attributionURL rdf:resource="http://lod.taxonconcept.org"/>
+    <foaf:topic rdf:resource="http://lod.taxonconcept.org/about/index.rdf"/>
+  </rdf:Description>
+
+</rdf:RDF>

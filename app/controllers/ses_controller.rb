@@ -3,7 +3,11 @@ class SesController < ApplicationController
   # GET /ses.xml
   def index
     @ses = Se.all
-
+    @ses_rdf    = SITE + '/ses/index.rdf'
+    @ses_html   = SITE + '/ses/index.html'
+    @ses_prefix = SITE + '/ses/'
+    @time_now   = Time.now.strftime('%Y-%m-%dT%H:%M:%S%z')
+    
     respond_to do |format|
       format.html # index.html.erb
       #format.xml  { render :xml => @ses }
@@ -26,8 +30,10 @@ class SesController < ApplicationController
       se_uid     = @se.se_uid
       se_uuid    = @se.se_uuid
       @se_name   = scientificname(@se.se_genus,@se.se_epithet,@se.se_author_year)
+
     # create GNI UUIDs for synonyms
      @se_name_uuid              =  UUID.create_v5((@se.se_genus + " " + @se.se_epithet),GNA_NAMESPACE).guid
+     if !@se.se_synonym_one.nil? then @se_synonym_one_uuid = UUID.create_v5(@se.se_synonym_one,GNA_NAMESPACE).guid else @se_synonym_one_uuid = nil end
   #  @se_synonym_one_uuid       =  UUID.create_v5(@se.se_synonym_one,GNA_NAMESPACE).guid
   #  @se_synonym_two_uuid       =  UUID.create_v5(@se.se_synonym_two,GNA_NAMESPACE).guid
   #  @se_synonym_three_uuid     =  UUID.create_v5(@se.se_synonym_three,GNA_NAMESPACE).guid
@@ -37,7 +43,6 @@ class SesController < ApplicationController
   #
       @se_concept_name       =  concept_name(@se.se_genus,@se.se_epithet,@se.se_uid)
       @se_concept_id         =  concept_id(@se.se_uuid)
-      @se_concept_name       =  concept_name(@se.se_genus,@se.se_epithet,@se.se_uid)
       @se_ncbi_url           =  ncbi_url(@se.se_ncbi)
       @se_bio2rdf            =  bio2rdf_url(@se.se_ncbi)
       @se_uniprot            =  uniprot_url(@se.se_ncbi)
@@ -83,63 +88,63 @@ class SesController < ApplicationController
 
   # GET /ses/new
   # GET /ses/new.xml
-  def new
-    @se = Se.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @se }
-    end
-  end
+ # def new
+ #   @se = Se.new
+#
+ #   respond_to do |format|
+#      format.html # new.html.erb
+#      format.xml  { render :xml => @se }
+#    end
+#  end
 
   # GET /ses/1/edit
-  def edit
-    @se = Se.find(params[:id])
-  end
+#  def edit
+#    @se = Se.find(params[:id])
+#  end
 
   # POST /ses
   # POST /ses.xml
-  def create
-    @se = Se.new(params[:se])
-
-    respond_to do |format|
-      if @se.save
-        flash[:notice] = 'Se was successfully created.'
-        format.html { redirect_to(@se) }
-        format.xml  { render :xml => @se, :status => :created, :location => @se }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @se.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
+#  def create
+#    @se = Se.new(params[:se])
+#
+#    respond_to do |format|
+#      if @se.save
+#       flash[:notice] = 'Se was successfully created.'
+#        format.html { redirect_to(@se) }
+#        format.xml  { render :xml => @se, :status => :created, :location => @se }
+#      else
+#        format.html { render :action => "new" }
+#        format.xml  { render :xml => @se.errors, :status => :unprocessable_entity }
+#      end
+#    end
+#  end
 
   # PUT /ses/1
   # PUT /ses/1.xml
-  def update
-    @se = Se.find(params[:id])
-
-    respond_to do |format|
-      if @se.update_attributes(params[:se])
-        flash[:notice] = 'Se was successfully updated.'
-        format.html { redirect_to(@se) }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @se.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
+#  def update
+#    @se = Se.find(params[:id])
+#
+#    respond_to do |format|
+#      if @se.update_attributes(params[:se])
+#        flash[:notice] = 'Se was successfully updated.'
+#        format.html { redirect_to(@se) }
+#        format.xml  { head :ok }
+#     else
+#        format.html { render :action => "edit" }
+#        format.xml  { render :xml => @se.errors, :status => :unprocessable_entity }
+#      end
+#    end
+#  end
 
   # DELETE /ses/1
   # DELETE /ses/1.xml
-  def destroy
-    @se = Se.find(params[:id])
-    @se.destroy
+#  def destroy
+#    @se = Se.find(params[:id])
+#    @se.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(ses_url) }
-      format.xml  { head :ok }
-    end
-  end
+#    respond_to do |format|
+#      format.html { redirect_to(ses_url) }
+#      format.xml  { head :ok }
+#    end
+#  end
 end

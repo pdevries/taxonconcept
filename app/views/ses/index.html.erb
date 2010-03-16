@@ -1,61 +1,36 @@
-<h1>Listing ses</h1>
+<h1>Listing Species Concepts</h1>
 
 <table>
   <tr>
-    <th>Se uid</th>
-    <th>Se uuid</th>
-    <th>Se active</th>
-    <th>Se status</th>
-    <th>Se replaced by</th>
-    <th>Se close match</th>
-    <th>Se type objective</th>
-    <th>Se type phylogenetic</th>
-    <th>Se type biological</th>
-    <th>Se phylum</th>
-    <th>Se class</th>
-    <th>Se order</th>
-    <th>Se family</th>
-    <th>Se genus</th>
-    <th>Se epithet</th>
-    <th>Se author year</th>
-    <th>Se synonym one</th>
-    <th>Se synonym two</th>
-    <th>Se synonym three</th>
-    <th>Se synonym four</th>
-    <th>Se synonym five</th>
-    <th>Se basionym</th>
-    <th>Se ontology</th>
-    <th>Se division</th>
-    <th>Se ncbi</th>
-    <th>Se ubio</th>
-    <th>Se itis</th>
-    <th>Se gbif</th>
-    <th>Se eol</th>
-    <th>Se bold</th>
-    <th>Se col</th>
-    <th>Se col</th>
-    <th>Se geospecies</th>
-    <th>Se dbpedia</th>
-    <th>Se freebase</th>
-    <th>Se opencyc</th>
-    <th>Se umbel</th>
-    <th>Se lc</th>
-    <th>Se bbc</th>
-    <th>Se wikipedia</th>
-    <th>Se wikispecies</th>
+    <th>se_uid</th>
+    <th>se_active</th>
+    <th>se_status</th>
+    <th>se_kingdom</th>
+    <th>se_phylum</th>
+    <th>se_class</th>
+    <th>se_order</th>
+    <th>se_family</th>
+    <th>se_genus</th>
+    <th>se_epithet</th>
+    <th>se_author_year</th>
+    <th>se_synonym_one</th>
+    <th>se_ncbi</th>
+    <th>se_ubio</th>
+    <th>se_itis</th>
+    <th>se_gbif</th>
+    <th>se_eol</th>
+    <th>se_bold</th>
+    <th>se_bbc</th>
+    <th>se_wikipedia</th>
+    <th>se_wikispecies</th>
   </tr>
 
 <% @ses.each do |se| %>
   <tr>
     <td><%=h se.se_uid %></td>
-    <td><%=h se.se_uuid %></td>
     <td><%=h se.se_active %></td>
     <td><%=h se.se_status %></td>
-    <td><%=h se.se_replaced_by %></td>
-    <td><%=h se.se_close_match %></td>
-    <td><%=h se.se_type_objective %></td>
-    <td><%=h se.se_type_phylogenetic %></td>
-    <td><%=h se.se_type_biological %></td>
+    <td><%=h se.se_kingdom %></td>
     <td><%=h se.se_phylum %></td>
     <td><%=h se.se_class %></td>
     <td><%=h se.se_order %></td>
@@ -64,37 +39,18 @@
     <td><%=h se.se_epithet %></td>
     <td><%=h se.se_author_year %></td>
     <td><%=h se.se_synonym_one %></td>
-    <td><%=h se.se_synonym_two %></td>
-    <td><%=h se.se_synonym_three %></td>
-    <td><%=h se.se_synonym_four %></td>
-    <td><%=h se.se_synonym_five %></td>
-    <td><%=h se.se_basionym %></td>
-    <td><%=h se.se_ontology %></td>
-    <td><%=h se.se_division_id %></td>
     <td><%=h se.se_ncbi %></td>
     <td><%=h se.se_ubio %></td>
     <td><%=h se.se_itis %></td>
     <td><%=h se.se_gbif %></td>
     <td><%=h se.se_eol %></td>
     <td><%=h se.se_bold %></td>
-    <td><%=h se.se_col_id %></td>
-    <td><%=h se.se_col %></td>
-    <td><%=h se.se_geospecies %></td>
-    <td><%=h se.se_dbpedia %></td>
-    <td><%=h se.se_freebase %></td>
-    <td><%=h se.se_opencyc %></td>
-    <td><%=h se.se_umbel %></td>
-    <td><%=h se.se_lc %></td>
     <td><%=h se.se_bbc %></td>
     <td><%=h se.se_wikipedia %></td>
     <td><%=h se.se_wikispecies %></td>
-    <td><%= link_to 'Show', se %></td>
-    <td><%= link_to 'Edit', edit_se_path(se) %></td>
-    <td><%= link_to 'Destroy', se, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', '/ses/' + se.se_uid + '.html' %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New se', new_se_path %>

@@ -72,6 +72,9 @@ end
   if !@se_name_uuid.nil?
     xml.txn(:speciesConceptHasSpeciesNameString, "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid)
   end
+  if !@se_synonym_one_uuid.nil?
+    xml.txn(:speciesConceptHasSpeciesNameString, "rdf:resource" => GNA_RDF_PREFIX + @se_synonym_one_uuid)
+  end
   if @se.se_type_objective?
     xml.rdf(:type, "rdf:resource" => ONTOLOGY + "SpeciesConceptTypeIsObjective")
   end
@@ -202,14 +205,22 @@ xml.comment!("Linked Data Linkouts")
   end  
 
 
-  if ! @se_name_uuid.nil?
+  if !@se_name_uuid.nil?
     xml.gni(:NameString, "rdf:about"  =>  GNA_RDF_PREFIX + @se_name_uuid ) do
     xml.skos(:prefLabel, @se_name)
-    xml.dcterms(:identifier, GNA_RDF_PREFIX + @se_name_uuid)
     xml.rdfs(:seeAlso,  "rdf:resource" => GNA_RDF_PREFIX + @se_name_uuid + ".rdf")
     xml.txn(:speciesNameStringHasSpeciesTaxonConcept,    "rdf:resource"    => @se_uri)
     end  
   end  
+
+  if !@se_synonym_one_uuid.nil?
+    xml.gni(:NameString, "rdf:about"  =>  GNA_RDF_PREFIX + @se_synonym_one_uuid ) do
+    xml.skos(:prefLabel, @se.se_synonym_one)
+    xml.rdfs(:seeAlso,  "rdf:resource" => GNA_RDF_PREFIX + @se_synonym_one_uuid + ".rdf")
+    xml.txn(:speciesNameStringHasSpeciesTaxonConcept,    "rdf:resource"    => @se_uri)
+    end  
+  end  
+
 
 xml.txn(:SpeciesOccurrenceTag,  "rdf:about" =>  @se_prefix + "#Occurrence") do
    xml.skos(:prefLabel, "A Tag-like resource that is used to label occurrences of the species concept", @se_concept_name)

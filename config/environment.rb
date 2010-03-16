@@ -41,6 +41,7 @@ Rails::Initializer.run do |config|
 end
 # Constants for RDF Header INFO
 PUBLISHER                                            = "TaxonConcept Knowledge Base"
+SITE_NAME                                            = "TaxonConcept Knowledge Base"
 PUBLISHER_URI                                        = "http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept_Knowledge_Base_Project"
 DATASET_URI                                          = "http://lod.taxonconcept.org/ontology/void#this"
 CREATOR1                                             = "Peter J. DeVries"
@@ -49,7 +50,9 @@ CREATOR2                                             = "Dimtry Mozzherin"
 CREATOR2_URI                                         = "http://lod.taxonconcept.org/ontology/people.owl#Dimtry_Mozzherin"
 LICENSE_URI                                          = "http://creativecommons.org/publicdomain/"
 ATTRIBUTION_URL                                      = "http://lod.taxonconcept.org"
+SITE                                                 = "http://lod.taxonconcept.org"
 SPECIES_ID_PREFIX                                    = "urn:lsid:globalnames.org:taxon:"
+RDF_DUMP_URL                                         = SITE + "/taxonconcept.rdf"
 
 
 # Constants for ONTOLOGY's
