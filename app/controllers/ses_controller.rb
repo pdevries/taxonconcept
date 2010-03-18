@@ -55,6 +55,7 @@ class SesController < ApplicationController
       @se_col_id_url         =  col_id_url(@se.se_col_id)
       @se_geospecies_url     =  geospecies_url(@se.se_uid)
       @se_dbpedia_url        =  dbpedia_url(@se.se_dbpedia)
+      @se_dbpedia_resource   =  dbpedia_resource(@se.se_dbpedia)
       @se_freebase_url       =  freebase_url(@se.se_freebase)
       @se_opencyc_url        =  opencyc_url(@se.se_opencyc)
       @se_umbel_url          =  umbel_url(@se.se_umbel)

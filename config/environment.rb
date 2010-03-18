@@ -50,7 +50,9 @@ CREATOR2                                             = "Dimtry Mozzherin"
 CREATOR2_URI                                         = "http://lod.taxonconcept.org/ontology/people.owl#Dimtry_Mozzherin"
 LICENSE_URI                                          = "http://creativecommons.org/publicdomain/"
 ATTRIBUTION_URL                                      = "http://lod.taxonconcept.org"
+ATTRIBUTION_NAME                                     = 'Peter J. DeVries'
 SITE                                                 = "http://lod.taxonconcept.org"
+WEBSITE_DESCRIPTION                                  = "The GeoSpecies Knowledge Base Occurrence records site provides occurrence records for species following Linked Data standards"
 SPECIES_ID_PREFIX                                    = "urn:lsid:globalnames.org:taxon:"
 RDF_DUMP_URL                                         = SITE + "/taxonconcept.rdf"
 

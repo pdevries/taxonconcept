@@ -129,6 +129,16 @@ class ApplicationController < ActionController::Base
     end
    end
 
+   def dbpedia_resource(dbpedia)
+         if dbpedia.nil?
+           dbpedia_url = nil
+         else
+         dbpedia_resource = "http://dbpedia.org/page/" + dbpedia + ".rdf"
+     end
+    end
+
+
+
   def freebase_url(freebase)
         if freebase.nil?
           freebase_url = nil
