@@ -34,6 +34,8 @@ xml.rdf(:Description, "rdf:about" => @home_rdf ) do
      xml.rdfs(:seeAlso, 'rdf:resource' =>  @home_rdf)
      xml.rdfs(:seeAlso, 'rdf:resource' =>  SITE + '/ses/index.rdf')
      xml.rdfs(:seeAlso, 'rdf:resource' => 'http://ocs.geospecies.org/index.rdf')
+     xml.rdfs(:seeAlso, 'rdf:resource' => 'http://ocs.geospecies.org/ocs/index.rdf')
+     xml.rdfs(:seeAlso, 'rdf:resource' =>  VOID_URL)
 end
 
 xml.rdf(:Description, "rdf:about" => @home_html) do

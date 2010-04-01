@@ -20,19 +20,20 @@
     <dcterms:creator rdf:resource="http://lod.taxonconcept.org/ontology/people.owl#Peter_J_DeVries" />
     <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
     <dcterms:created>2009-11-20T15:56:04-0600</dcterms:created>
-    <dcterms:modified>2010-03-11T08:32:00-0600</dcterms:modified>
+    <dcterms:modified>2010-03-29T17:51:00-0600</dcterms:modified>
     <foaf:primaryTopic rdf:resource="http://lod.taxonconcept.org/ontology/void#this" />
   </rdf:Description>
 
    <void:Dataset rdf:about="http://lod.taxonconcept.org/ontology/void#this">
       <dcterms:title>TaxonConcept Dataset</dcterms:title>
       <rdfs:comment>TaxonConcept Void</rdfs:comment>
-      <foaf:homepage rdf:resource="http://lod.geospecies.org/index.html"/>
+      <foaf:homepage rdf:resource="http://lod.taxonconcept.org/"/>
       <dcterms:subject rdf:resource="http://dbpedia.org/resource/Biodiversity_Informatics"/>
       <dcterms:creator rdf:resource="http://lod.taxonconcept.org/ontology/people.owl#Peter_J_DeVries"/>
       <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
       <void:vocabulary rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#"/>
       <void:vocabulary rdf:resource="http://rdf.geospecies.org/ont/geospecies#"/>
+      <void:vocabulary rdf:resource="http://purl.org/ontology/wo/"/>
       <void:vocabulary rdf:resource="http://xmlns.com/foaf/0.1/"/>
       <void:vocabulary rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
       <void:vocabulary rdf:resource="http://creativecommons.org/ns#"/>
@@ -43,7 +44,7 @@
       <void:vocabulary rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
       <void:statItem rdf:parseType="Resource">
          <scovo:dimension rdf:resource="http://rdfs.org/ns/void#numOfTriples"/>
-         <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26763</rdf:value>
+         <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39406</rdf:value>
       </void:statItem>
       <void:exampleResource rdf:resource="http://lod.taxonconcept.org/ses/v6n7p.rdf"/>
       <void:dataDumpLocation rdf:resource="http://lod.taxonconcept.org/taxonconcept.rdf"/>
@@ -55,8 +56,9 @@
       <void:subset rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2OpenCyc"/>
       <void:subset rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2Umbel"/>
       <void:subset rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2GeoSpecies"/>
-      <void:subset rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2BBC_Species"/>
-   </void:Dataset>
+      <void:subset rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2BBCNature"/>
+      <void:subset rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2OCS"/>
+  </void:Dataset>
 
     <!-- LSID Resources are not included in this VOID since it is not clear how to resolve them -->
 
@@ -96,9 +98,14 @@
      <foaf:homepage rdf:resource="http://lod.geospecies.org/"/>
    </void:Dataset>
 
-   <void:Dataset rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#BBC_Species">
-     <dcterms:title>BBC</dcterms:title>
+   <void:Dataset rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#BBCNature">
+     <dcterms:title>BBC Nature</dcterms:title>
      <foaf:homepage rdf:resource="http://www.bbc.co.uk/nature/species/"/>
+   </void:Dataset>
+
+   <void:Dataset rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#OCS">
+     <dcterms:title>GeoSpecies Occurrence Records</dcterms:title>
+     <foaf:homepage rdf:resource="http://ocs.geospecies.org/"/>
    </void:Dataset>
 
    <void:Linkset rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2DBpedia">
@@ -143,10 +150,17 @@
     <void:target rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#GeoSpecies"/>
    </void:Linkset>
 
-   <void:Linkset rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2BBC_Species">
+   <void:Linkset rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2BBCNature">
     <void:linkPredicate rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
     <void:target rdf:resource="http://lod.taxonconcept.org/ontology/void#this"/>
-    <void:target rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#BBC_Species"/>
+    <void:target rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#BBCNature"/>
+   </void:Linkset>
+
+   <void:Linkset rdf:about="http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2OCS">
+    <void:linkPredicate rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#occurrenceHasSpeciesOccurenceTag"/>
+    <void:linkPredicate rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#occurrenceHasSpeciesConcept"/>
+    <void:target rdf:resource="http://lod.taxonconcept.org/ontology/void#this"/>
+    <void:target rdf:resource="http://lod.taxonconcept.org/ontology/txn.owl#OCS"/>
    </void:Linkset>
 
 

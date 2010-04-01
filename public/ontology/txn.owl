@@ -4,6 +4,7 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY void "http://rdfs.org/ns/void#" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY wo "http://purl.org/ontology/wo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY ontology "http://www.geonames.org/ontology#" >
@@ -19,26 +20,29 @@
 <rdf:RDF xmlns="http://lod.taxonconcept.org/ontology/txn.owl#"
      xml:base="http://lod.taxonconcept.org/ontology/txn.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:wo="http://purl.org/ontology/wo/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:ontology="http://www.geonames.org/ontology#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:txn="http://lod.taxonconcept.org/ontology/txn.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:void="http://rdfs.org/ns/void#"
-     xmlns:ontology="http://www.geonames.org/ontology#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="">
         <rdfs:comment
             >This is a very early version of the ontology. It is unstable.</rdfs:comment>
         <rdfs:seeAlso
+            >http://lod.taxonconcept.org/ontology/void.rdf</rdfs:seeAlso>
+        <rdfs:seeAlso
             >http://lod.taxonconcept.org/ontology/doc/index.html</rdfs:seeAlso>
         <dc:creator
             >Peter J. DeVries</dc:creator>
-        <dc:date>2010-03-10</dc:date>
         <rdfs:seeAlso
             >http://lod.taxonconcept.org/ses/v6n7p.rdf</rdfs:seeAlso>
+        <dc:date>2010-04-01</dc:date>
     </owl:Ontology>
     
 
@@ -67,6 +71,50 @@
     
 
 
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#basisOfRecord -->
+
+    <owl:ObjectProperty rdf:about="#basisOfRecord"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#collector -->
+
+    <owl:ObjectProperty rdf:about="#collector"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#georeferenceProtocol -->
+
+    <owl:ObjectProperty rdf:about="#georeferenceProtocol"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#georeferenceVerificationStatus -->
+
+    <owl:ObjectProperty rdf:about="#georeferenceVerificationStatus"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#identifiedAs -->
+
+    <owl:ObjectProperty rdf:about="#identifiedAs">
+        <rdfs:range rdf:resource="#SpeciesConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#identifiedBy -->
+
+    <owl:ObjectProperty rdf:about="#identifiedBy"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#individualStatus -->
+
+    <owl:ObjectProperty rdf:about="#individualStatus"/>
+    
+
+
     <!-- http://lod.taxonconcept.org/ontology/txn.owl#occurrenceHasOccurrenceSpecimenTag -->
 
     <owl:ObjectProperty rdf:about="#occurrenceHasOccurrenceSpecimenTag">
@@ -81,6 +129,15 @@
     <owl:ObjectProperty rdf:about="#occurrenceHasOccurrenceTaxonTag">
         <rdfs:domain rdf:resource="#Occurrence"/>
         <rdfs:range rdf:resource="#OccurrenceTaxonTag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#occurrenceHasSpeciesConcept -->
+
+    <owl:ObjectProperty rdf:about="#occurrenceHasSpeciesConcept">
+        <rdfs:domain rdf:resource="#Occurrence"/>
+        <rdfs:range rdf:resource="#SpeciesConcept"/>
     </owl:ObjectProperty>
     
 
@@ -124,6 +181,12 @@
         <rdfs:domain rdf:resource="#Occurrence"/>
         <rdfs:range rdf:resource="&ontology;Feature"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#samplingProtocol -->
+
+    <owl:ObjectProperty rdf:about="#samplingProtocol"/>
     
 
 
@@ -253,12 +316,68 @@
     
 
 
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#behavioralNote -->
+
+    <owl:DatatypeProperty rdf:about="#behavioralNote"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#catalogCode -->
+
+    <owl:DatatypeProperty rdf:about="#catalogCode"/>
+    
+
+
     <!-- http://lod.taxonconcept.org/ontology/txn.owl#class -->
 
     <owl:DatatypeProperty rdf:about="#class">
         <rdfs:label>class</rdfs:label>
         <rdfs:domain rdf:resource="#SpeciesConcept"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#collectionCode -->
+
+    <owl:DatatypeProperty rdf:about="#collectionCode"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#commonName -->
+
+    <owl:DatatypeProperty rdf:about="#commonName">
+        <rdfs:domain rdf:resource="#SpeciesConcept"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#continent -->
+
+    <owl:DatatypeProperty rdf:about="#continent"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#country -->
+
+    <owl:DatatypeProperty rdf:about="#country"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#countryCode -->
+
+    <owl:DatatypeProperty rdf:about="#countryCode"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#county -->
+
+    <owl:DatatypeProperty rdf:about="#county"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#endDate -->
+
+    <owl:DatatypeProperty rdf:about="#endDate"/>
     
 
 
@@ -286,6 +405,18 @@
         <rdfs:label>genus</rdfs:label>
         <rdfs:domain rdf:resource="#SpeciesConcept"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#geoExtent -->
+
+    <owl:DatatypeProperty rdf:about="#geoExtent"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#gisAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="#gisAccuracy"/>
     
 
 
@@ -361,12 +492,42 @@
     
 
 
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#identificationDate -->
+
+    <owl:DatatypeProperty rdf:about="#identificationDate"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#institutionCode -->
+
+    <owl:DatatypeProperty rdf:about="#institutionCode"/>
+    
+
+
     <!-- http://lod.taxonconcept.org/ontology/txn.owl#kingdom -->
 
     <owl:DatatypeProperty rdf:about="#kingdom">
         <rdfs:label>kingdom</rdfs:label>
         <rdfs:domain rdf:resource="#SpeciesConcept"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#localityText -->
+
+    <owl:DatatypeProperty rdf:about="#localityText"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#locationName -->
+
+    <owl:DatatypeProperty rdf:about="#locationName"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#occurrenceHasScientificName -->
+
+    <owl:DatatypeProperty rdf:about="#occurrenceHasScientificName"/>
     
 
 
@@ -432,6 +593,18 @@
     
 
 
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#startDate -->
+
+    <owl:DatatypeProperty rdf:about="#startDate"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#stateProvince -->
+
+    <owl:DatatypeProperty rdf:about="#stateProvince"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -451,9 +624,9 @@
     
 
 
-    <!-- http://lod.taxonconcept.org/ontology/txn.owl#CoL2009Taxon -->
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#CoL_Taxon_LSID -->
 
-    <owl:Class rdf:about="#CoL2009Taxon">
+    <owl:Class rdf:about="#CoL_Taxon_LSID">
         <rdfs:label>CoL2009Taxon</rdfs:label>
     </owl:Class>
     
@@ -603,6 +776,14 @@
     
 
 
+    <!-- http://purl.org/ontology/wo/Species -->
+
+    <owl:Class rdf:about="&wo;Species">
+        <rdfs:label>BBC Species</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://rdfs.org/ns/void#Dataset -->
 
     <owl:Class rdf:about="&void;Dataset">
@@ -676,6 +857,15 @@
     
 
 
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#CoL -->
+
+    <owl:Thing rdf:about="#CoL">
+        <rdf:type rdf:resource="&void;Dataset"/>
+        <rdfs:label>Catalog of Life</rdfs:label>
+    </owl:Thing>
+    
+
+
     <!-- http://lod.taxonconcept.org/ontology/txn.owl#DBpedia -->
 
     <owl:Thing rdf:about="#DBpedia">
@@ -694,12 +884,50 @@
     
 
 
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#GeoProtocol_GPS -->
+
+    <owl:Thing rdf:about="#GeoProtocol_GPS"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#GeoProtocol_GoogleMaps -->
+
+    <owl:Thing rdf:about="#GeoProtocol_GoogleMaps"/>
+    
+
+
     <!-- http://lod.taxonconcept.org/ontology/txn.owl#GeoSpecies -->
 
     <owl:Thing rdf:about="#GeoSpecies">
         <rdf:type rdf:resource="&void;Dataset"/>
         <rdfs:label>GeoSpeciesTaxon</rdfs:label>
     </owl:Thing>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#GeoVerifiedByCollector -->
+
+    <owl:Thing rdf:about="#GeoVerifiedByCollector"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#IndividualStatus_PreservedSpecimen -->
+
+    <owl:Thing rdf:about="#IndividualStatus_PreservedSpecimen"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#IndividualStatus_Unknown -->
+
+    <owl:Thing rdf:about="#IndividualStatus_Unknown"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#OCS -->
+
+    <void:Dataset rdf:about="#OCS">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </void:Dataset>
     
 
 
@@ -720,9 +948,95 @@
     
 
 
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#SamplingProtocol_IndividualObservation -->
+
+    <owl:Thing rdf:about="#SamplingProtocol_IndividualObservation"/>
+    
+
+
     <!-- http://lod.taxonconcept.org/ontology/txn.owl#SpeciesOntology -->
 
     <owl:Thing rdf:about="#SpeciesOntology"/>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2BBCNature -->
+
+    <void:Linkset rdf:about="#TaxonConcept2BBCNature">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </void:Linkset>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2Bio2RDF -->
+
+    <void:Linkset rdf:about="#TaxonConcept2Bio2RDF">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </void:Linkset>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2CoL -->
+
+    <owl:Thing rdf:about="#TaxonConcept2CoL">
+        <rdf:type rdf:resource="&void;Linkset"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2DBpedia -->
+
+    <void:Linkset rdf:about="#TaxonConcept2DBpedia">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </void:Linkset>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2Freebase -->
+
+    <owl:Thing rdf:about="#TaxonConcept2Freebase">
+        <rdf:type rdf:resource="&void;Linkset"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2GeoSpecies -->
+
+    <owl:Thing rdf:about="#TaxonConcept2GeoSpecies">
+        <rdf:type rdf:resource="&void;Linkset"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2OCS -->
+
+    <void:Linkset rdf:about="#TaxonConcept2OCS">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </void:Linkset>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2OpenCyc -->
+
+    <owl:Thing rdf:about="#TaxonConcept2OpenCyc">
+        <rdf:type rdf:resource="&void;Linkset"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2Umbel -->
+
+    <void:Linkset rdf:about="#TaxonConcept2Umbel">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </void:Linkset>
+    
+
+
+    <!-- http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept2Uniprot -->
+
+    <owl:Thing rdf:about="#TaxonConcept2Uniprot">
+        <rdf:type rdf:resource="&void;Linkset"/>
+    </owl:Thing>
     
 
 

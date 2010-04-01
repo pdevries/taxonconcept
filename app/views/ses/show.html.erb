@@ -1,5 +1,9 @@
 <h1><%=h @se_concept_name %> </h1>
 
+<p><%= link_to 'View as RDF', @se.se_uid + ".rdf" %></p>
+
+<p><%= link_to 'View in URIburner', @uriburner %> - See Primary Topic</p>
+
 <p>
   <b>Se uid:</b>
   <%=h @se.se_uid %>
@@ -78,6 +82,11 @@
 <p>
   <b>Se author year:</b>
   <%=h @se.se_author_year %>
+</p>
+
+<p>
+  <b>Se cname:</b>
+  <%=h @se.se_cname %>
 </p>
 
 <p>

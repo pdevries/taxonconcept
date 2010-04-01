@@ -19,6 +19,7 @@ class CreateSes < ActiveRecord::Migration
       t.string :se_epithet
       t.string :se_author_year
       t.string :se_rank
+      t.string :se_cname
       t.string :se_synonym_one
       t.string :se_synonym_two
       t.string :se_synonym_three

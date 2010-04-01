@@ -33,7 +33,7 @@ Rails::Initializer.run do |config|
 
   # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
   # Run "rake -D time" for a list of tasks for finding time zone names.
-  config.time_zone = 'UTC'
+  config.time_zone = 'Central Time (US & Canada)' # Central Standard Time, Madison Wisconsin
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
@@ -44,6 +44,7 @@ PUBLISHER                                            = "TaxonConcept Knowledge B
 SITE_NAME                                            = "TaxonConcept Knowledge Base"
 PUBLISHER_URI                                        = "http://lod.taxonconcept.org/ontology/txn.owl#TaxonConcept_Knowledge_Base_Project"
 DATASET_URI                                          = "http://lod.taxonconcept.org/ontology/void#this"
+VOID_URL                                             = "http://lod.taxonconcept.org/ontology/void.rdf"
 CREATOR1                                             = "Peter J. DeVries"
 CREATOR1_URI                                         = "http://lod.taxonconcept.org/ontology/people.owl#Peter_J_DeVries"
 CREATOR2                                             = "Dimtry Mozzherin"
@@ -53,14 +54,22 @@ ATTRIBUTION_URL                                      = "http://lod.taxonconcept.
 ATTRIBUTION_NAME                                     = 'Peter J. DeVries'
 SITE                                                 = "http://lod.taxonconcept.org"
 WEBSITE_DESCRIPTION                                  = "The GeoSpecies Knowledge Base Occurrence records site provides occurrence records for species following Linked Data standards"
-SPECIES_ID_PREFIX                                    = "urn:lsid:globalnames.org:taxon:"
-RDF_DUMP_URL                                         = SITE + "/taxonconcept.rdf"
+SPECIES_ID_PREFIX                                    = "urn:uuid:" #This could be a LSID?
+RDF_DUMP_URL                                         =  SITE + "/taxonconcept.rdf"
 
+# Constants for Tag Suffix
+SPECIES                                             = "#Species"
+OCCURRENCE                                          = "#Occurrence"
+INDIVIDUAL                                          = "#Individual"
+TOPIC                                               = "#Topic"
+DATASET                                             = "#dataset"
 
 # Constants for ONTOLOGY's
 ONTOLOGY                                             = "http://lod.taxonconcept.org/ontology/txn.owl#"
 GNI_ONTOLOGY                                         = "http://www.globalnames.org/ontology/gni.owl#"
 GEOSPECIES_ONTOLOGY                                  = "http://rdf.geospecies.org/ont/geospecies#"
+BBC_PO                                               = 'http://purl.org/ontology/po/'
+BBC_WO                                               = 'http://purl.org/ontology/wo/'
 BBC_SPECIES_PREFIX                                   = "http://www.bbc.co.uk/nature/species/"
 SPECIES_DOCUMENTATION_PREFIX                         = "http://lod.taxonconcept.org/se_owl/"
 SEO_ONTOLOGY                                         = "http://www.taxonconcept.org/ont/se_v01/seo.owl#"
@@ -112,7 +121,7 @@ BIO2RDF_TAXON_URL_PREFIX                             = 'http://bio2rdf.org/taxon
 BIOLIB_URL_PREFIX                                    = 'http://www.biolib.cz/en/taxon/'
 BUGGUIDE_PREFIX                                      = 'http://bugguide.net/node/view/'
 CANADIANARACHNOLOGY_PREFIX                           = 'http://www.canadianarachnology.org/data/spiders/'
-COL_PREFIX                                           = 'http://www.catalogueoflife.org/browse_taxa.php?selected_taxon='
+COL_PREFIX                                           = 'urn:lsid:catalogueoflife.org:taxon:'
 DBPEDIA_PREFIX                                       = 'http://dbpedia.org/resource/'
 EOL_PREFIX                                           = 'http://www.eol.org/pages/'
 FLICKRWRAPPR_PREFIX                                  = 'http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/'

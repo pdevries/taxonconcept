@@ -96,11 +96,11 @@ class ApplicationController < ActionController::Base
         end
   end
 
-  def col_url(col)
+  def col_uri(col)
         if col.nil?
-           col_url = nil
+           col_uri = nil
         else
-        col_url = (COL_PREFIX + col.to_s)
+        col_uri = (COL_PREFIX + col.to_s + ":ac2010")
     end
   end
 
@@ -137,7 +137,13 @@ class ApplicationController < ActionController::Base
      end
     end
 
-
+    def uriburner_url(se_uid)
+          if se_uid.nil?
+            se_uid_url = nil
+          else
+          uriburner_url = "http://linkeddata.uriburner.com/about/html/http/lod.taxonconcept.org/ses/" + se_uid + ".rdf"
+      end
+     end
 
   def freebase_url(freebase)
         if freebase.nil?
@@ -177,6 +183,14 @@ class ApplicationController < ActionController::Base
            bbc_url = nil
         else
         bbc_url = (BBC_SPECIES_PREFIX  + bbc)
+    end
+  end
+
+  def bbc_uri(bbc)
+        if bbc.nil?
+           bbc_uri = nil
+        else
+        bbc_uri = (BBC_SPECIES_PREFIX  + bbc + '#species')
     end
   end
 

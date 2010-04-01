@@ -34,8 +34,7 @@ class SesController < ApplicationController
     # create GNI UUIDs for synonyms
      @se_name_uuid              =  UUID.create_v5((@se.se_genus + " " + @se.se_epithet),GNA_NAMESPACE).guid
      if !@se.se_synonym_one.nil? then @se_synonym_one_uuid = UUID.create_v5(@se.se_synonym_one,GNA_NAMESPACE).guid else @se_synonym_one_uuid = nil end
-  #  @se_synonym_one_uuid       =  UUID.create_v5(@se.se_synonym_one,GNA_NAMESPACE).guid
-  #  @se_synonym_two_uuid       =  UUID.create_v5(@se.se_synonym_two,GNA_NAMESPACE).guid
+     if !@se.se_synonym_two.nil? then @se_synonym_two_uuid = UUID.create_v5(@se.se_synonym_two,GNA_NAMESPACE).guid else @se_synonym_two_uuid = nil end
   #  @se_synonym_three_uuid     =  UUID.create_v5(@se.se_synonym_three,GNA_NAMESPACE).guid
   #  @se_synonym_four_uuid      =  UUID.create_v5(@se.se_synonym_four,GNA_NAMESPACE).guid
   #  @se_synonym_five_uuid      =  UUID.create_v5(@se.se_synonym_five,GNA_NAMESPACE).guid
@@ -51,7 +50,7 @@ class SesController < ApplicationController
       @se_gbif_url           =  gbif_url(@se.se_gbif)
       @se_eol_url            =  eol_url(@se.se_eol)
       @se_bold_url           =  bold_url(@se.se_bold)
-      @se_col_url            =  col_url(@se.se_col)
+      @se_col_uri            =  col_uri(@se.se_col)
       @se_col_id_url         =  col_id_url(@se.se_col_id)
       @se_geospecies_url     =  geospecies_url(@se.se_uid)
       @se_dbpedia_url        =  dbpedia_url(@se.se_dbpedia)
@@ -60,13 +59,18 @@ class SesController < ApplicationController
       @se_opencyc_url        =  opencyc_url(@se.se_opencyc)
       @se_umbel_url          =  umbel_url(@se.se_umbel)
       @se_lc_url             =  lc_url(@se.se_lc)
-      @se_bbc_url            =  bbc_url(@se.se_bbc)
+      @se_bbc_url            =  bbc_url(@se.se_bbc)  # The RDF page
+      @se_bbc_uri            =  bbc_uri(@se.se_bbc)  # The BBC Species URI
       @se_wikispecies        =  wikispecies_url(@se.se_wikispecies)
       @se_wikipedia          =  wikipedia_url(@se.se_wikipedia)
-      @se_prefix             =  'http://lod.taxonconcept.org/ses/'     +  @se.se_uid
-      @se_uri                =  'http://lod.taxonconcept.org/ses/'     +  @se.se_uid  + '#species'
-      @se_url                =  'http://lod.taxonconcept.org/ses/'     +  @se.se_uid + '.html'
-      @se_rdf                =  'http://lod.taxonconcept.org/ses/'     +  @se.se_uid + ".rdf"
+      @se_prefix             =  SITE + '/ses/'     +  @se.se_uid
+      @se_uri                =  SITE + '/ses/'     +  @se.se_uid  + SPECIES #This is the uri for the speciesconcept
+      @se_url                =  SITE + '/ses/'     +  @se.se_uid  + '.html' #This is the uri for the html page
+      @se_rdf                =  SITE + '/ses/'     +  @se.se_uid  + '.rdf'  #This is the uri for the rdf page
+      @uriburner             =  uriburner_url(@se.se_uid)
+      @se_species_occurrence_tag  = @se_prefix + OCCURRENCE
+      @se_species_individual_tag  = @se_prefix + INDIVIDUAL
+      @se_species_topic_tag       = @se_prefix + TOPIC
 
       if params[:format]
        # either the html or rdf representation has been asked for directly, so provide it

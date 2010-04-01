@@ -18,5 +18,6 @@ tmp/sockets/*
 tmp/war
 tmp/metric_fu/*
 log/*
+public/ontology/bbc_species.rdf
 config/deploy.rb
 config/deploy

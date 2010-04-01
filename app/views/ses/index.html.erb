@@ -3,32 +3,23 @@
 <table>
   <tr>
     <th>se_uid</th>
-    <th>se_active</th>
-    <th>se_status</th>
-    <th>se_kingdom</th>
-    <th>se_phylum</th>
-    <th>se_class</th>
-    <th>se_order</th>
-    <th>se_family</th>
-    <th>se_genus</th>
-    <th>se_epithet</th>
-    <th>se_author_year</th>
-    <th>se_synonym_one</th>
-    <th>se_ncbi</th>
-    <th>se_ubio</th>
-    <th>se_itis</th>
-    <th>se_gbif</th>
-    <th>se_eol</th>
-    <th>se_bold</th>
-    <th>se_bbc</th>
-    <th>se_wikipedia</th>
-    <th>se_wikispecies</th>
+    <th>Active</th>
+    <th>Status</th>
+    <th>Kingdom</th>
+    <th>Phylum</th>
+    <th>Class</th>
+    <th>Order</th>
+    <th>Family</th>
+    <th>Genus</th>
+    <th>Epithet</th>
+    <th>Author_Year</th>
+    <th>Synonym_One</th>
   </tr>
 
 <% @ses.each do |se| %>
   <tr>
     <td><%=h se.se_uid %></td>
-    <td><%=h se.se_active %></td>
+    <td><%= image_tag "true.png", :alt => 'Active' %></td>
     <td><%=h se.se_status %></td>
     <td><%=h se.se_kingdom %></td>
     <td><%=h se.se_phylum %></td>
@@ -39,15 +30,6 @@
     <td><%=h se.se_epithet %></td>
     <td><%=h se.se_author_year %></td>
     <td><%=h se.se_synonym_one %></td>
-    <td><%=h se.se_ncbi %></td>
-    <td><%=h se.se_ubio %></td>
-    <td><%=h se.se_itis %></td>
-    <td><%=h se.se_gbif %></td>
-    <td><%=h se.se_eol %></td>
-    <td><%=h se.se_bold %></td>
-    <td><%=h se.se_bbc %></td>
-    <td><%=h se.se_wikipedia %></td>
-    <td><%=h se.se_wikispecies %></td>
     <td><%= link_to 'Show', '/ses/' + se.se_uid + '.html' %></td>
   </tr>
 <% end %>
